@@ -1,0 +1,998 @@
+/* ==================================================================================================== */
+/* MEDIA QUERY 1200     MEDIA QUERY 1200     MEDIA QUERY 1200     MEDIA QUERY 1200     MEDIA QUERY 1200 */
+/* ==================================================================================================== */
+
+@media (max-width: 1200px) {
+
+    /* -------------------------------------------------- */
+    /* LINK 1200                                LINK 1200 */
+    /* -------------------------------------------------- */
+    .root {
+        margin-top: 100px;
+    }
+}
+
+
+
+/* ==================================================================================================== */
+/* MEDIA QUERY 1000     MEDIA QUERY 1000     MEDIA QUERY 1000     MEDIA QUERY 1000     MEDIA QUERY 1000 */
+/* ==================================================================================================== */
+
+@media (max-width: 1000px) {
+
+    /* -------------------------------------------------- */
+    /* HEAD 1000                                HEAD 1000 */
+    /* -------------------------------------------------- */
+    .course-head-area {
+        background: #1e06395c;
+        --white-title: rgba(255, 255, 255, 0.816);
+    }
+
+    h1 {
+        text-shadow: 2px 2px 5px #333333;
+    }
+
+    .course-head-image {
+        width: 100%;
+    }
+
+    .course-head-image img {
+        object-position: center;
+    }
+
+    .course-head-title-inner {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    .course-head-title-inner p:first-of-type {
+        border-image: linear-gradient(to right, #ff0073 30px, transparent 30px);
+        border-image-slice: 1;
+    }
+
+    /* -------------------------------------------------- */
+    /* INDEX 1000                              INDEX 1000 */
+    /* -------------------------------------------------- */
+    .index-contents li {
+        width: 49%;
+    }
+
+    .br-remove1000 {
+        display: none;
+    }
+
+    /* -------------------------------------------------- */
+    /* LEVELS 1000                            LEVELS 1000 */
+    /* -------------------------------------------------- */
+    .levels-each {
+        padding-left: 30px;
+        padding-bottom: 30px;
+        position: relative;
+    }
+
+
+    /* ================================================== */
+
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* NATURALIZATION 1000            NATURALIZATION 1000 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .assistance-contents img {
+        padding: 0 0 0 10px;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* COURSES 1000                        COURSES 1000 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .body-courses .course-head-area {
+        background: #1e063986;
+    }
+
+    .body-courses .course-head-image {
+        width: 100%;
+    }
+
+    .body-courses .index-area {
+        margin-top: 50px;
+    }
+
+    .specialties-contents {
+        column-gap: 4%;
+        row-gap: 4vw;
+    }
+
+    .specialties-contents li {
+        width: 48%;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* INDIRECT METHOD 1000          INDIRECT METHOD 1000 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .text-price, .plus-price {
+        display: none;
+    }
+
+    .text-price-sp {
+        display: block;
+    }
+}
+
+
+
+/* ==================================================================================================== */
+/* MEDIA QUERY 768     MEDIA QUERY 768     MEDIA QUERY 768     MEDIA QUERY 768     MEDIA QUERY 768 */
+/* ==================================================================================================== */
+
+@media (max-width: 768px) {
+
+    /* -------------------------------------------------- */
+    /* COMMON 768                              COMMON 768 */
+    /* -------------------------------------------------- */
+    .courses-contents {
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h2:not(.intro-contents h2, .trial-area h2, .contact-area h2) {
+        border-top: 3px solid #390b6c;
+        border-image: linear-gradient(to right, #ccb6dc 16px, #6937a3 16px, #6937a3 32px, white 30px, white 100%);
+        border-image-slice: 1; 
+    }
+
+    /* -------------------------------------------------- */
+    /* LINK 768                                  LINK 768 */
+    /* -------------------------------------------------- */
+    .root {
+        display: none;
+    }
+
+    /* -------------------------------------------------- */
+    /* HEAD 768                                  HEAD 768 */
+    /* -------------------------------------------------- */
+    .course-head-area {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .course-head-title-inner p:first-of-type {
+        font-size: 16px;
+    }
+
+    .course-head-title-inner a {
+        margin-top: 30px;
+        padding: 8px 40px;
+        border: 2px solid var(--white-title);
+        font-size: 16px;
+    }
+
+    /* -------------------------------------------------- */
+    /* INDEX 768                                INDEX 768 */
+    /* -------------------------------------------------- */
+    .index-contents {
+        row-gap: 5px;
+    }
+    
+    .index-contents li {
+        width: 100%;
+    }
+
+    /* -------------------------------------------------- */
+    /* STRENGTHS 768                        STRENGTHS 768 */
+    /* -------------------------------------------------- */
+    .features-contents h3{
+        font-size: 18px;
+    }
+
+    .features-each-icon {
+        width: 80px;
+        max-height: 80px;
+        box-shadow: 2px 2px 5px #2b085291;
+    }
+
+    .features-each-icon svg{
+        width: 50%;
+        fill: #390b6c;
+    }
+
+    .features-each-text {
+        width: calc(100% - 110px);
+    }
+
+    /* -------------------------------------------------- */
+    /* LEVELS 768                              LEVELS 768 */
+    /* -------------------------------------------------- */
+    .levels-each-title {
+        display: block;
+    }
+
+    .levels-contents h3 {
+        font-size: 30px;
+        border-right: unset;
+        padding-right: 0;
+        border-bottom: 1px solid #e6e1ec;
+    }
+
+    .intermediate h3 {
+        border-bottom: 1px solid #b995e4;
+    }
+
+    .advanced h3 {
+        border-bottom: 1px solid #521f8d;
+    }
+
+    .levels-each-intro {
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+    
+    .levels-contents {
+        border-left: 7px solid #390b6c;
+        border-image: linear-gradient(to bottom, #f3f0f6 0%, #390b6c 100%);
+        border-image-slice: 1;
+    }
+    
+    .levels-each {
+        padding-left: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .levels-each-arrow {
+        padding: 30px;
+    }
+
+    .levels-each-text {
+        margin-top: 20px;
+    }
+
+    .levels-each-goal {
+        margin-top: 20px;
+    }
+
+    .levels-each-arrow svg {
+        width: 35px;
+    }
+
+    .levels-image {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 2 / 1;
+        /* height: 250px; */
+        margin-top: 20px;
+        left: 0;
+    }
+
+    .body-conversation .levels-image img {
+        object-position: 50% 20%;
+    }
+
+    .levels-image span {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: radial-gradient(transparent 20%, rgba(255, 255, 255, 0.73));
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: none;
+    }
+
+    /* -------------------------------------------------- */
+    /* DETAILS & FEES 768              DETAILS & FEES 768 */
+    /* -------------------------------------------------- */
+    .details-table th {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+    
+    .details-table td {
+        width: 100%;
+        display: block;
+        padding: 15px 15px 15px 30px;
+        box-sizing: border-box;
+    }
+
+    .fees-table th {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .fees-table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        box-sizing: border-box;
+    }
+
+    /* -------------------------------------------------- */
+    /* OTHERS 768                              OTHERS 768 */
+    /* -------------------------------------------------- */
+    .others-list li {
+        width: 100%;
+    }
+
+
+    .br-sp {
+        display: block;
+    }
+
+    .space-def {
+        display: none;
+    }
+
+
+    /* ================================================== */
+
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* INDUSTRY 768                          INDUSTRY 768 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .body-industry .levels-each {
+        border-left: 7px solid #390b6c;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* NATURALIZATION 768              NATURALIZATION 768 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .assistance-contents {
+        display: block;
+    }
+    
+    .assistance-contents p {
+        width: 100%;
+    }
+
+    .assistance-contents img {
+        margin: 20px auto 0;
+        padding: 0;
+    }
+
+    .naturalization-details-table th {
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+
+    .naturalization-details-table th span{
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .naturalization-details-table th:nth-of-type(2),
+    .naturalization-details-table th:nth-of-type(3) {
+        display: flex;
+        align-items: center;
+    }
+
+    .naturalization-details-table th:nth-of-type(2) span{
+        background-color: rgb(60, 23, 194);
+    }
+
+    .naturalization-details-table th:nth-of-type(3) span{
+        background-color: rgb(255, 52, 160);
+    }
+
+    .naturalization-details-table tr:first-of-type th:nth-of-type(2),
+    .naturalization-details-table tr:first-of-type th:nth-of-type(3) {
+        width: 100%;
+        padding: 15px 20px;
+        background-color: #f8f6fa;
+        text-align: left;
+        color: #333333;
+    }
+
+    .naturalization-details-table th:first-of-type{
+        width: unset;
+    }
+
+    .naturalization-details-table tr:first-child > *:first-child {
+        background-color: #390b6c;
+    }
+
+    .naturalization-details-table tr:first-child > *:first-child::before {
+        content: "Lesson style";
+    }
+
+    .naturalization-details-table td {
+        width: 100%;
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+    }
+
+    .naturalization-details-table td:first-of-type span::before {
+        content: "Group";
+        white-space: pre;
+        display: inline-block;
+        color: white;
+        background-color: rgb(60, 23, 194);
+        border-radius: 50px;
+        padding: 3px 15px;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .naturalization-details-table td:last-of-type span::before {
+        content: "Private";
+        white-space: pre;
+        display: inline-block;
+        color: white;
+        background-color: rgb(255, 52, 160);
+        border-radius: 50px;
+        padding: 3px 15px;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* JLPT 768                                  JLPT 768 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .jlpt-details-contents h3 {
+        font-size: 23px;
+    }
+
+    .jlpt-details-table th {
+        width: 100%;
+        display: block;
+        padding: 10px 30px;
+        box-sizing: border-box;
+    }
+    
+    .jlpt-details-table td {
+        width: 100%;
+        display: block;
+        padding: 15px 30px;
+        box-sizing: border-box;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* CHILDREN 768                          CHILDREN 768 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .age-table th {
+        font-size: 18.5px;
+    }
+
+    .message-area .courses-contents {
+        display: block;
+    }
+
+    .message-area p {
+        width: 100%;
+    }
+    
+    .message-image {
+        width: 80%;
+        max-width: 350px;
+        margin: 50px auto 0;
+    }
+
+    .body-children .details-table tr:first-child th,
+    .body-children .fees-table tr:first-child th,
+    .body-children .details-table tr:last-child th,
+    .body-children .fees-table  tr:last-child th {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .body-children .details-table tr:first-child td,
+    .body-children .fees-table  tr:first-child td,
+    .body-children .details-table tr:last-child td,
+    .body-children .fees-table  tr:last-child td {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .body-children .details-table th,
+    .body-children .fees-table th {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .body-children .details-table td,
+    .body-children .fees-table td {
+        border-radius: 0 0 10px 10px;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* CORPORATE 768                        CORPORATE 768 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .body-corporate .index-contents li {
+        width: 100%;
+    }
+
+    .features-each-image {
+        width: 30%;
+    }
+    .body-corporate .features-each-text {
+        width: 65%;
+    }
+
+    .regular-area h3 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .lessons-points ul li {
+        width: 100%;
+    }
+
+    .lessons-contents-each:nth-child(2){
+        margin-top: 30px;
+    }
+    
+    .lessons-contents-each:last-child {
+        margin-top: 30px;
+    }
+
+    .lessons-points-upper {
+        display: flex;
+        column-gap: 20px;;
+    }
+
+    .lessons-points-upper p:first-child {
+        font-size: 13px;
+    }
+
+    .lessons-points-upper p:last-child {
+        font-size: 18px;
+    }
+
+    .lessons-result ul li {
+        width: 100%;
+    }
+
+    .lessons-result p {
+        font-size: 18px;
+    }
+
+    .other-services-area h3 {
+        font-size: 21px;
+    }
+
+    .corporate-fees-table {
+        width: 800px;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* JAPANESE 768                          JAPANESE 768 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .courses-jp h1 {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+
+    .courses-jp .course-head-title-inner a {
+        font-size: 15px;
+    }
+
+    .courses-jp h2 {
+        font-size: 27px;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* INDIRECT METHOD 768            INDIRECT METHOD 768 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .seminars-schedule-contents > tbody > tr > th {
+        width: 100%;
+        padding: 15px 30px;
+        display: block;
+    }
+
+    .seminars-schedule-contents > tbody > tr > td {
+        width: 100%;
+        padding: 20px 30px;
+        display: block;
+    }
+
+    .seminar-curriculum-contents table {
+        margin-top: 30px;
+    }
+
+    .seminar-curriculum-contents ul {
+        list-style: decimal;
+        margin-left: 25px;
+    }
+
+    .seminar-curriculum-contents ul li {
+        margin-top: 5px;
+    }
+
+    .seminar-curriculum-contents ul li:first-child {
+        margin-top: 0;
+    }
+
+    .seminar-curriculum-contents th {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        border: 1px solid white;
+    }
+
+    .seminar-curriculum-contents td {
+        display: block;
+        width: 100%;
+        border: 1px solid white;
+    }
+
+    .voice-each-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 13px;
+    }
+
+    .voice-each-title {
+        width: calc(100% - 100px);
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .voice-each-text {
+        height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+
+    .voice-each-text p {
+        padding: 10px 20px 30px 20px;
+    }
+
+    .voice-each-text p span {
+        display: block;
+        text-align: right;
+    }
+
+    .voice-each-plus {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        margin-left: auto;
+    }
+
+    .voice-each-plus span {
+        display: inline-block;
+        width: 18px;
+        height: 2px;
+        background-color: #390b6c;
+    }
+}
+
+
+
+/* ==================================================================================================== */
+/* MEDIA QUERY 500     MEDIA QUERY 500     MEDIA QUERY 500     MEDIA QUERY 500     MEDIA QUERY 500 */
+/* ==================================================================================================== */
+
+@media (max-width: 500px) {
+
+    /* -------------------------------------------------- */
+    /* COMMON 500                              COMMON 500 */
+    /* -------------------------------------------------- */
+    .courses-area {
+        padding: 30px 0;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h2:not(.intro-contents h2, .trial-area h2, .contact-area h2) {
+        padding-top: 15px;
+    }
+
+    /* -------------------------------------------------- */
+    /* HEAD 500                                  HEAD 500 */
+    /* -------------------------------------------------- */
+    .course-head-area {
+        width: 100%;
+        height: unset;
+        aspect-ratio: 1 / 1;
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size:30px;
+    }
+
+    .course-head-title-inner a {
+        font-size: 15px;
+    }
+
+    /* -------------------------------------------------- */
+    /* INTRO 500                                INTRO 500 */
+    /* -------------------------------------------------- */
+    .intro-area {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .intro-contents h2 {
+        font-size: 21.5px;
+    }
+
+    /* -------------------------------------------------- */
+    /* INDEX 500                                INDEX 500 */
+    /* -------------------------------------------------- */
+    .index-contents li a {
+        padding: 10px 20px;
+    }
+
+    /* -------------------------------------------------- */
+    /* STRENGTHS 500                        STRENGTHS 500 */
+    /* -------------------------------------------------- */
+    .features-contents li {
+        margin-top: 30px;
+    }
+
+    .features-each-title {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .features-contents h3{
+        margin-bottom: unset;
+    }
+
+    .features-contents li {
+        position: relative
+    }
+
+    .features-each-icon {
+        position: absolute;
+        top: -15px;
+        right: 0;
+        border-radius: initial;
+        box-shadow: none;
+        z-index: -1;
+    }
+
+    .features-each-icon svg{
+        width: 100%;
+        fill: #eee8f5;
+    }
+
+    .features-each-text {
+        width: 100%;
+    }
+
+    /* -------------------------------------------------- */
+    /* LEVELS 500                              LEVELS 500 */
+    /* -------------------------------------------------- */
+    .levels-contents {
+        border-left: 6px solid #390b6c;
+    }
+
+    .levels-contents h3 {
+        font-size: 20px;
+    }
+    
+    .levels-each {
+        padding-left: 20px;
+        text-shadow: 1px 1px 0px white, -1px -1px 3px white, 2px 2px 3px white;
+    }
+
+    .levels-each-arrow svg {
+        width: 35px;
+    }
+
+    /* -------------------------------------------------- */
+    /* OTHERS 500                              OTHERS 500 */
+    /* -------------------------------------------------- */
+    .others-list {
+        row-gap: 15px;
+    }
+
+    .others-list li {
+        transition: unset;
+        background-size: 16px;
+    }
+
+    .others-list li:hover {
+        transform: unset;
+    }
+
+    .others-image {
+        width: 25%;
+    }
+
+    .others-each-text {
+        padding: 0 35px 0 15px;
+    }
+
+    .others-area h3 {
+        font-size: 17px;
+    }
+
+
+    /* ================================================== */
+
+
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* NATURALIZATION 500              NATURALIZATION 500 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .assistance-contents img {
+        width: 80%;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* JLPT 500                                  JLPT 500 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .jlpt-details-contents h3 {
+        font-size: 20px;
+    }
+    
+    .jlpt-details-table td {
+        padding: 15px 20px;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* CHILDREN 500                          CHILDREN 500 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .age-table th {
+        width: 100%;
+        display: block;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .age-table td {
+        width: 100%;
+        display: block;
+        padding: 30px 20px 20px 20px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .age-table td span {
+        width: 40px;
+        height: 15px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+
+        -webkit-mask-image: url(../img/icons/triangle_down.png);
+        mask-image: url(../img/icons/triangle_down.png);
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* COURSES 500                            COURSES 500 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .body-courses .index-area {
+        margin-top: 20px;
+    }
+
+    .specialties-contents li {
+        width: 100%;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* CORPORATE 500                        CORPORATE 500 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .body-corporate .features-contents li {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .features-each-image {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .body-corporate .features-each-text {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .regular-area h3 {
+        font-size: 19px;
+    }
+
+    .lessons-points-upper {
+        display: block;
+    }
+
+    .other-services-area h3 {
+        font-size: 19px;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* JAPANESE 500                          JAPANESE 500 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .courses-jp h1 {
+        font-size: 28px;
+    }
+
+    .courses-jp .course-head-title-inner a {
+        font-size: 14px;
+    }
+
+    .courses-jp h2 {
+        font-size: 22px;
+    }
+
+
+
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* INDIRECT METHOD 500            INDIRECT METHOD 500 */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .remove500 {
+        display: none;
+    }
+
+    .date-sp {
+        display: initial;
+    }
+
+    .time-sp {
+        margin-top: 20px;
+        display: block;
+    }
+
+    .fees-inner-table tr td:first-child,
+    .fees-inner-table tr td:nth-child(2) {
+        width: 100%;
+        display: block;
+    }
+
+    .text-price {
+        display: none;
+    }
+
+        /* 受講者の声 */
+    /* -------------------------------------------------- */
+    .voice-each-header {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .voice-each-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 11px;
+    }
+
+    .voice-each-title {
+        width: calc(100% - 90px);
+    }
+
+    .voice-each-plus {
+        width: 15px;
+        height: 15px;
+    }
+
+    .voice-each-plus span {
+        width: 15px;
+        height: 1px;
+    }
+
+    .voice-each-text p {
+        padding: 10px 15px 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .others-area h3 {
+        font-size: 4.4vw;
+    }
+}

@@ -1,0 +1,136 @@
+.age-container h3 {
+    font-size: 25px;
+    position: absolute;
+    background-color: white;
+    padding: 0 20px;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+.age-each {
+    padding: 50px 40px;
+    margin-top: 70px;
+    position: relative;
+    border: 1px solid #390b6c;
+}
+
+.age-each-contents {
+    display: flex;
+    justify-content:space-between
+}
+
+.age-each-goal ul {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.age-each-goal ul li {
+    line-height: 25px;
+}
+
+.age-each img {
+    width: 300px;
+    height: 200px;
+}
+
+
+
+.details-table {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.details-table th {
+    width: 20%;
+    padding: 15px;
+    vertical-align: middle;
+    color: white;
+    background-color: #390b6c;
+    border: 1px solid #f2e8fc;
+}
+
+.details-table td {
+    padding: 15px 30px;
+    line-height: 25px;
+    border: 1px solid #f2e8fc;
+}
+
+
+.fees-table {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.fees-table th {
+    width: 20%;
+    padding: 15px;
+    vertical-align: middle;
+    color: white;
+    background-color: #390b6c;
+    border: 1px solid #f2e8fc;
+}
+
+.fees-table td {
+    padding: 15px 30px;
+    line-height: 25px;
+    border: 1px solid #f2e8fc;
+}
+
+
+.trial-container {
+    max-width: 100%;
+    background-color: #f7efff;
+    padding: 50px 0;
+}
+
+.trial-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.trial-container .square {
+    background-color: white;
+}
+
+.trial-intro {
+    margin-top: 30px;
+}
+
+.trial-step ul {
+
+    margin-top: 30px;
+    list-style: none;
+}
+
+.trial-step li {
+    margin-top: 15px;
+}
+
+.trial-step p{
+    margin-top: 5px;
+}
+
+.trial-button-wrapper {
+    margin-top: 60px;
+}
+
+.trial-button-wrapper a {
+    text-decoration: none;
+}
+
+.trial-button-wrapper p {
+    width: 400px;
+    font-size: 20px;
+    color: white;
+    background-color: #ff208f;
+    text-align: center;
+    border-radius: 50px;
+
+    margin: 0 auto;
+    padding: 15px
+}

@@ -1,0 +1,125 @@
+/* Free Trial Lesson */
+.trial-container {
+    background: linear-gradient(to right, #fff3fb 0%, #fff3fb 50%, #fff3fb28 100%);
+    padding: 80px 0 70px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.trial-image {
+    background-image: url("../img/free-trial.jpg");
+    background-size: cover;
+    background-position: 50%;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.trial-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.trial-contents-wrapper h2 {
+    text-align: left;
+    font-size: 45px;
+    color: rgb(255, 106, 168);
+    line-height: 1;
+}
+
+.trial-contents-wrapper h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    margin-top: 40px;
+    color: rgb(255, 168, 204);
+}
+
+.trial-contents-text {
+    margin-top: 10px;
+}
+
+.trial-link-wrapper {
+    margin-top: 50px;
+}
+
+.trial-link-wrapper a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.trial-link-wrapper p{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255, 0, 111);
+    border-radius: 50px;
+    width: 500px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.trial-arrow {
+    fill: white;
+}
+
+.trial-link-wrapper p:hover{
+    color: white;
+    background-color: rgb(255, 125, 181);
+}
+
+
+
+@media (max-width: 800px) {
+    /* Free Trial Lesson */
+    .trial-container {
+        background: radial-gradient(#fff3f9e4 0%, #fff3f9e4 70%, #fff3fb95 100%);
+        padding: 30px 0 40px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .trial-image {
+        background-position: 20%;
+        width: 100%;
+    }
+
+    .trial-wrapper {
+        width: 90%;
+        text-align: center;
+    }
+
+    .trial-contents-wrapper h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .trial-contents-wrapper h3 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .trial-contents-text {
+        font-size: 16px;
+
+    }
+
+    .trial-link-wrapper {
+        margin-top: 30px;
+    }
+
+    .trial-link-wrapper a{
+        text-decoration: none;
+    }
+
+    .trial-link-wrapper p{
+        font-size: 16px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+
+}

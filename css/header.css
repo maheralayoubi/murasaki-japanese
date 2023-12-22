@@ -1,0 +1,380 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.header-area {
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    border-bottom: 2px solid #f8f2ff;
+    font-family: 'Roboto', "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    line-height: 1.5;
+    z-index: 300;
+    transition: height .4s;
+}
+
+.body-index .header-area {
+    border-bottom: 2px solid white;
+}
+
+.header-inner {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 320px;
+    height: 40%;
+    vertical-align: middle;
+    transition: width .4s;
+}
+
+.header-right {
+    height: 100%;
+    transition: transform .4s, height .4s;
+    transform-origin: right;
+}
+
+.header-right-upper {
+    height: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+.header-right-upper-jp{
+    font-size: 14px;
+}
+
+.header-icons {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    transition: height .4s;
+}
+
+.header-language {
+    margin-right: 30px;
+    padding-top: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.header-language a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.global-icon {
+    width: 20px;
+    margin-right: 5px;
+    transition: width .4s;
+}
+
+.header-language svg {
+    width: 20px;
+}
+
+.sns-icons {
+    margin-right: 20px;
+}
+
+.facebook-icon,
+.twitter-icon {
+    width: 25px;
+    vertical-align: middle;
+    transition: width .4s;
+}
+
+.facebook-icon {
+    margin-right: 5px;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact-button,
+.trial-button {
+    height: 45px;
+    margin-right: 10px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    background-image: url(../img/icons/arrow_right_white.svg);
+    background-repeat: no-repeat;
+    background-size: auto 22%;
+    background-position: top 50% right 8%;
+    transition: height .4s, padding .4s, background-color .1s;
+}
+
+.contact-button-jp,
+.trial-button-jp {
+    padding: 0 40px;
+}
+
+.contact-button {
+    background-color: #390b6c;
+}
+
+.contact-button:hover {
+    background-color: #7855a0;
+}
+
+.trial-button {
+    background-color: #ff3d7e;
+    margin-right: 0;
+}
+
+.trial-button:hover {
+    background-color: #fd7aa6;
+}
+
+
+
+/* ----- Header Menu -----  ----- Header Menu -----  ----- Header Menu -----  ----- Header Menu -----  ----- Header Menu ----- */
+.header-nav {
+    height: 50%;
+    background-color: white;
+}
+
+.nav-list {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 18px;
+}
+
+.header-jp .nav-list {
+    font-size: 17px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav-list-jp{
+    font-size: 16px;
+}
+
+.nav-item {
+    height: 100%;
+    list-style: none;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.nav-item:nth-child(5) {
+    padding: 0 10px 0 20px;
+}
+
+.nav-link {
+    color: #373737;
+    text-decoration: none;
+} 
+
+
+
+.nav-item:hover .nav-link{
+    color: #b7acc8;
+
+}
+
+.nav-arrow-container{
+    display: none;
+}
+
+.nav-course,
+.nav-seminar {
+    position: relative;
+}
+
+
+/* ----- Dropdown Menu -----  ----- Dropdown Menu -----  ----- Dropdown Menu -----  ----- Dropdown Menu -----  ----- Dropdown Menu ----- */
+.course-list,
+.seminar-list {
+    width: 360px;
+    display: none;
+    position: absolute;
+    top: 63px;
+    left: 0;
+    background-color: white;
+    box-shadow: 3px 2px 5px #7b7186d4;
+    z-index: 5;
+    transition: width .4s, top .4s;
+}
+
+.seminar-list {
+    width: 260px;
+}
+
+.nav-course:hover .course-list,
+.nav-seminar:hover .seminar-list {
+    display: block;
+}
+
+.nav-course:hover .aaa::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 13px solid transparent;
+    border-bottom: 13px solid #f4f4fa;
+    filter: drop-shadow(3px 1px 1px rgba(0, 0, 0, 0.158));
+}
+
+.course-item,
+.seminar-item {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px dotted #d9d0e2;
+    font-size: 18px;
+    transition: height .4s, font-size .4s;
+}
+
+.course-item a,
+.seminar-item a {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    text-decoration: none;
+    padding-left: 40px;
+    background-image: url('../img/icons/arrow_right_base-pueple.png');
+    background-repeat: no-repeat;
+    background-size: 9px;
+    background-position: 20px 50%;
+}
+
+.item-arrow {
+    width: 12px;
+    margin-right: 10px;
+    fill: #390b6c;
+}
+
+.course-item a:hover ,
+.seminar-item a:hover {
+    background-color: #ece6f6;
+}
+
+.top-container {
+    margin-top: 130px;
+    transition: .4s;
+}
+
+
+
+
+/* ----- Scroll Animation -----  ----- Scroll Animation -----  ----- Scroll Animation -----  ----- Scroll Animation -----  ----- Scroll Animation ----- */
+.header-area.scroll{
+    height: 100px;
+}
+
+.header-area.scroll .header-right {
+    transform: scale(.95);
+    transform-origin: right;
+    height: 100px;
+}
+
+.header-area.scroll .header-logo {
+    width: 280px;
+}
+
+.header-area.scroll .contact-button,
+.header-area.scroll .trial-button {
+    height: 37px;
+}
+
+.header-area.scroll .header-icons {
+    height: 37px;
+}
+
+.header-area.scroll .global-icon {
+    width: 19px;
+}
+
+.header-area.scroll .facebook-icon,
+.header-area.scroll .twitter-icon {
+    width: 24px;
+}
+
+.header-area.scroll .course-item,
+.header-area.scroll .seminar-item {
+    width: 100%;
+    height: 55px;
+}
+
+.header-area.scroll .course-list {
+    top: 48px;
+    width: 355px;
+}
+
+.header-area.scroll .seminar-list {
+    top: 48px;
+    width: 260px;
+}
+
+
+
+/* ----- PC Display None -----  ----- PC Display None -----  ----- PC Display None -----  ----- PC Display None -----  ----- PC Display None ----- */
+.humburger,
+.nav-item-sns,
+.nav-item-contact,
+.nav-item-trial {
+    display: none;
+}
+
+.sp-header-container {
+    display: none;
+}
+
+.sp-header-language-area {
+    width: 100%;
+    padding: 20px 0;
+    display: none;
+    position: absolute;
+    top: 60px;
+    font-size: 13px;
+    color: white;
+    background-color: #190531d3;
+    z-index: 2;
+}
+
+
+
+
+
+
+

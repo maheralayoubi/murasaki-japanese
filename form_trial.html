@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>Trial Lesson Form</title>
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/inquiry.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+    <div class="form-head">
+        <img src="img/footer_mji-logo.png">
+    </div>
+    <div class="form-area trial-area" id="formWrap">
+        <h1>Free Trial Lesson & Consultation</h1>
+        <div class="steps-contents">
+            <ul>
+                <li>
+                    <div class="steps-each-title">
+                        <p>STEP 1</p>
+                        <p>Registration</p>
+                    </div>
+                    <div class="steps-each-text">
+                        <div class="steps-each-arrow"><span></span></div>
+                        <p>
+                            Fill out our registration form.
+                            If you don’t know your level, a rough estimate is fine.
+                            When the form is successfully submitted, you recieve an auto reply email that confirms your submission.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="steps-each-title">
+                        <p>STEP 2</p>
+                        <p>Scheduling</p>
+                    </div>
+                    <div class="steps-each-text">
+                        <div class="steps-each-arrow"><span></span></div>
+                        <p>
+                            We will email you to schedule your free trial lesson date.
+                            You can choose a face-to-face or online lesson.
+                            Let us know If you have any questions about your trial lesson.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="steps-each-title">
+                        <p>STEP 3</p>
+                        <p>Trial Lesson & Consultation</p>
+                    </div>
+                    <div class="steps-each-text">
+                        <div class="steps-each-arrow"></div>
+                        <p>
+                            Enjoy your trial lesson.
+                            Feel free to tell us about your goals, interests, and business, and ask questions about our lesson style.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="form-contents">
+            <h1>Registration Form</h1>
+            <p class="form-required">All the fields with "<span class="form-asterisk"></span>" are required.</p>
+            <form method="post" action="form_submit" class="form-contents-inner" name="trial_form">
+                <input type="hidden" name="form_type" value="trial" checked="checked">
+                <table class="formTable">
+                    <tr class="name">
+                        <th><label for="name">Name</label><span class="form-asterisk"></span></th>
+                        <td>
+                            <div class="double-input">
+                                <input size="20" type="text" name="First_name" placeholder="First name" id="name">
+                                <input size="20" type="text" name="Last_name" placeholder="Last name">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="input-full">
+                        <th><label for="email">Email</label><span class="form-asterisk"></span></th>
+                        <td><input type="text" name="Email" placeholder="example@domain.com" id="email"></td>
+                    </tr>
+                    <tr class="input-full">
+                        <th><label for="phone">Phone</label></th>
+                        <td><input size="30" type="text" name="Phone" id="phone"/></td>
+                    </tr>
+                    <tr class="input-full">
+                        <th><label for="nationality">Nationality</label></th>
+                        <td><input size="30" type="text" name="Nationality" id="nationality"></td>
+                    </tr>
+                    <tr class="input-full">
+                        <th><label for="level">Your Japanese level</label><span class="form-asterisk"></span></th>
+                        <td>
+                            <select name="Level" id="level" class="empty">
+                                <option class="option-first" value="">Please select</option>
+                                <option value="Complete Beginner">Complete Beginner</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Upper Beginner">Upper Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Upper Intermediate">Upper Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="courses">
+                        <th><label>Courses of interest</label><span class="form-asterisk"></span></th>
+                        <td>
+                            <p class="note-upper">Please select one or more.</p>
+                            <ul>
+                                <li><label><input type="checkbox" name="Courses[]" value="Business Japanese">Business Japanese</label></li>
+                                <li><label><input type="checkbox" name="Courses[]" value="Industry-specific Japanese">Industry-specific Japanese</label></li>
+                                <li><label><input type="checkbox" name="Courses[]" value="Japanese for Naturalization">Japanese for Naturalization</label></li>
+                                <li><label><input type="checkbox" name="Courses[]" value="Everyday Conversational Japanese">Everyday Conversational Japanese</label></li>
+                                <li><label><input type="checkbox" name="Courses[]" value="JLPT Preparation">JLPT Preparation</label></li>
+                                <li><label><input type="checkbox" name="Courses[]" value="Fun Children's Lessons">Fun Children's Lessons</label></li>
+                                <li><label><input type="checkbox" name="Courses[]" value="Intensive Course">Intensive Course</label></li>
+                                <li><label><input type="checkbox" name="Courses[]" value="Cross-cultural Experiences">Cross-cultural Experiences</label></li>
+                                <li><label><input type="checkbox" name="Courses[]" value="Learn Japanese with Manga">Learn Japanese with Manga</label></li>
+                                <li><label><input type="checkbox" name="Courses[]" value="Other customized Japanese lessons">Other customized Japanese lessons</label></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="style">
+                        <th>Preferred style for trial lesson<span class="form-asterisk"></span></th>
+                        <td>
+                            <ul>
+                                <li><input type="radio" name="Trial_style[]" value="At school">At school</li>
+                                <li><input type="radio" name="Trial_style[]" value="Online">Online</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="schedule">
+                        <th><label>Preferred schedule for trial lesson</label></th>
+                        <td>
+                            <ul>
+                                <li>
+                                    <p>First choice<span class="form-asterisk"></span></p>
+                                    <div class="double-input">
+                                        <input class="trial-date" type="text" name="First_date" placeholder="Date (yyyy-mm-dd)">
+                                        <select name="First_time" class="empty">
+                                            <option class="option-first" value="">Time slot you will be available</option>
+                                            <option value="08:00 - 10:00">08:00 - 10:00</option>
+                                            <option value="10:00 - 12:00">10:00 - 12:00</option>
+                                            <option value="12:00 - 14:00">12:00 - 14:00</option>
+                                            <option value="14:00 - 16:00">14:00 - 16:00</option>
+                                            <option value="16:00 - 18:00">16:00 - 18:00</option>
+                                            <option value="18:00 - 21:00">18:00 - 21:00</option>
+                                            <option value="Other time slot">Other time slot</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Second choice</p>
+                                    <div class="double-input">
+                                        <input class="trial-date" type="text" name="Second_date" placeholder="Date (yyyy-mm-dd)">
+                                        <select name="Second_time" class="empty">
+                                            <option class="option-first" value="">Time slot you will be available</option>
+                                            <option value="08:00 - 10:00">08:00 - 10:00</option>
+                                            <option value="10:00 - 12:00">10:00 - 12:00</option>
+                                            <option value="12:00 - 14:00">12:00 - 14:00</option>
+                                            <option value="14:00 - 16:00">14:00 - 16:00</option>
+                                            <option value="16:00 - 18:00">16:00 - 18:00</option>
+                                            <option value="18:00 - 21:00">18:00 - 21:00</option>
+                                            <option value="Other time zone">Other time zone</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Third choice</p>
+                                    <div class="double-input">
+                                        <input class="trial-date" type="text" name="Third_date" placeholder="Date (yyyy-mm-dd)">
+                                        <select name="Third_time" class="empty">
+                                            <option class="option-first" value="">Time slot you will be available</option>
+                                            <option value="08:00 - 10:00">08:00 - 10:00</option>
+                                            <option value="10:00 - 12:00">10:00 - 12:00</option>
+                                            <option value="12:00 - 14:00">12:00 - 14:00</option>
+                                            <option value="14:00 - 16:00">14:00 - 16:00</option>
+                                            <option value="16:00 - 18:00">16:00 - 18:00</option>
+                                            <option value="18:00 - 21:00">18:00 - 21:00</option>
+                                            <option value="Other time zone">Other time zone</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="note-under">If our schedule unfortunately does not work for your choice, we may ask you for choosing from our suggested schedule options.</p>
+                        </td>
+                    </tr>
+                    <tr class="how">
+                        <th>How did you find our school first?</th>
+                        <td>
+                            <select name="How" class="empty">
+                                <option value="">Please select</option>
+                                <option value="Google search">Google search</option>
+                                <option value="Other web browsers">Other web browsers</option>
+                                <option value="Other websites">Other websites</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="Other SNS">Other SNS</option>
+                                <option value="Friends/Family">Friends/Family</option>
+                                <option value="Coworkers/Supervisors">Coworkers/Supervisors</option>
+                                <option value="Judicial Scriveners">Judicial Scriveners</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="detail">
+                        <th>Any requests or questions</th>
+                        <td><textarea name="Inquiry" cols="50" rows="5" maxlength="1000" placeholder="Please fill in within 1000 characters."></textarea></td>
+                    </tr>
+                </table>
+
+                <div class="privacy-area">
+                    <p>Protection of Personal Information</p>
+                    <p>MURASAKI JAPANESE INSTITUTE will manage your personal information submitted via this form in accordance with our <a href="privacy-policy.html">privacy policy</a>.</p>
+                </div>
+
+                <p class="buttons">
+                    <input type="submit" value="Confirm" class="confirm-button"/><input type="reset" value="Reset" class="reset-button" />
+                </p>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; MURASAKI JAPANESE INSTITUTE</p>
+    </footer>
+
+    <script>
+        'use strict';
+
+        const trialDate = document.querySelectorAll('.trial-date');
+        const trialTime = document.querySelectorAll('.trial-time');
+
+        for (let i = 0; i < trialDate.length; i++) {
+            flatpickr(trialDate[i], {
+                allowInput: true,
+                disableMobile: "true",
+                minDate: new Date().fp_incr(3),
+                maxDate: new Date().fp_incr(90)
+            });
+
+            // trialDate[i].addEventListener('change', function() {
+                // const j = trialDate[i].value.split('-');
+                // const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                // trialDate[i].value = `${months[parseInt(j[1]) - 1]} ${j[2]}, ${j[0]}`;
+                // trialDate[i].textContent = `${months[parseInt(j[1]) - 1]} ${j[2]}, ${j[0]}`;
+                // trialDate[i].autocomplete = 'on';
+                // console.log(trialDate[i].value);
+            // })
+            // console.log(trialDate[i].textContent);
+        }
+        
+        // selectボックスのデフォルトか未選択時の表示の色をグレーにしてplaceholderの代わりにする
+        const selectTarget = document.querySelectorAll('select');
+        for (let i = 0; i < selectTarget.length; i++) {
+            selectTarget[i].addEventListener('change', function() {
+                if (selectTarget[i].value !== "") {
+                    this.classList.remove('empty');
+                } else {
+                    this.classList.add('empty');
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

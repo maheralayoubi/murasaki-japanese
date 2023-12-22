@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>日本語教師向け研修お申し込み | むらさきジャパニーズインスティテュート</title>
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/inquiry.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+    <div class="form-head">
+        <img src="../img/footer_mji-logo.png">
+    </div>
+    <div class="form-area trial-area" id="formWrap">
+        <h1>日本語教師向け研修お申し込み</h1>
+        <div class="steps-contents">
+            <ul>
+                <li>
+                    <div class="steps-each-title">
+                        <p>STEP 1</p>
+                        <p>お申し込みフォーム送信</p>
+                    </div>
+                    <div class="steps-each-text">
+                        <div class="steps-each-arrow"><span></span></div>
+                        <p>
+                            お申し込みフォームに必要事項をご入力の上、ご送信ください。
+                            送信が完了されましたら、送信内容確認の自動返信メールが届きます。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="steps-each-title">
+                        <p>STEP 2</p>
+                        <p>受講料お支払いに関するご案内</p>
+                    </div>
+                    <div class="steps-each-text">
+                        <div class="steps-each-arrow"><span></span></div>
+                        <p>
+                            ご送信いただいた内容を確認後、講座受講料お支払いについてのメールをお送りいたします。
+                            事前に何かご質問などございましたらお気軽にお尋ねください。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="steps-each-title">
+                        <p>STEP 3</p>
+                        <p>お申し込み完了・テキスト送付</p>
+                    </div>
+                    <div class="steps-each-text">
+                        <div class="steps-each-arrow"></div>
+                        <p>
+                            講座受講料のお支払いが確認できましたらお申し込み完了です。講座の前日までにZoomのご招待メールをお送りするので、当日はそちらリンクよりお入りください。間接教授法講座をお申込みの方は、講座が始まるまでにテキストを送付いたします。
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="form-contents">
+            <h1>お申し込みフォーム</h1>
+            <p class="form-required">「<span class="form-asterisk"></span>」の付いている項目は入力必須です。</p>
+            <form method="post" action="form_submit" class="form-contents-inner" name="seminars_form">
+                <input type="hidden" name="form_type" value="seminars" checked="checked">
+                <table class="formTable">
+                    <tr class="seminars">
+                        <th><label for="">ご希望内容</label><span class="form-asterisk"></span></th>
+                        <td>
+                            <ul class="seminars-list">
+                                <li><label><input type="radio" name="Seminar[]" value="間接教授法講座">間接教授法講座</label></li>
+                                <li><label><input type="radio" name="Seminar[]" value="上級ビジネス日本語教授法講座">上級ビジネス日本語教授法講座</label></li>
+                                <li><label><input type="radio" name="Seminar[]" value="子ども日本語レッスンセミナー＆研究会">子ども日本語レッスンセミナー＆研究会</label></li>
+                                <li><label><input type="radio" name="Seminar[]" value="お問い合わせ">お問い合わせ</label></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="name">
+                        <th>お名前<span class="form-asterisk"></span></th>
+                        <td><div class="double-input">
+                            <input size="20" type="text" name="Sei" placeholder="姓" />
+                            <input size="20" type="text" name="Mei" placeholder="名" />
+                        </div></td>
+                    </tr>
+                    <tr class="name">
+                        <th>ふりがな</th>
+                        <td><div class="double-input">
+                            <input size="20" type="text" name="Sei_kana" placeholder="せい" />
+                            <input size="20" type="text" name="Mei_kana" placeholder="めい" />
+                        </div></td>
+                    </tr>
+                    <tr class="input-full">
+                        <th><label for="email">メールアドレス</label><span class="form-asterisk"></span></th>
+                        <td><input type="text" name="Email" placeholder="example@domain.com" id="email"></td>
+                    </tr>
+                    <tr class="input-full">
+                        <th><label for="phone">お電話番号</label></th>
+                        <td><input size="30" type="text" name="Phone" id="phone"/></td>
+                    </tr>
+                    <tr class="input-full">
+                        <th><label for="address">ご住所</label></th>
+                        <td>
+                            <ul class="address-list">
+                                <li>
+                                    <p>郵便番号：</p>
+                                    <input type="text" name="Zip" placeholder="105-0001">
+                                </li>
+                                <li>
+                                    <p>住所：</p>
+                                    <textarea name="Address" cols="50" rows="5" placeholder="東京都港区虎ノ門2-5-5　ニュー虎ノ門ビル 3F"></textarea>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="how">
+                        <th>当校をどのようにしてお知りになりましたか？</th>
+                        <td>
+                            <select name="How" class="empty">
+                                <option value="">下記よりお選びください</option>
+                                <option value="セミナー・勉強会情報サイト">セミナー・勉強会情報サイト</option>
+                                <option value="Google検索">Google検索</option>
+                                <option value="その他の検索エンジン">その他の検索エンジン</option>
+                                <option value="他のウェブサイト">他のウェブサイト</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="その他のSNS">その他のSNS</option>
+                                <option value="ご友人/ご家族の紹介">ご友人/ご家族の紹介</option>
+                                <option value="お勤め先の方の紹介">お勤め先の方の紹介</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="detail">
+                        <th>ご質問・ご要望</th>
+                        <td><textarea name="Inquiry" cols="50" rows="5" maxlength="1000" placeholder="1000字以内でご入力ください。"></textarea></td>
+                    </tr>
+                </table>
+
+                <div class="privacy-area">
+                    <p>個人情報の取り扱いについて</p>
+                    <p>むらさきジャパニーズインスティテュートは、弊社が定める<a href="privacy-policy.html">プライバシーポリシー</a>に基づき、当フォームよりお送りいただいた個人情報を適切に管理いたします。</p>
+                </div>
+
+                <p class="buttons">
+                    <input type="submit" value="確認" class="confirm-button"/><input type="reset" value="リセット" class="reset-button" />
+                </p>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; MURASAKI JAPANESE INSTITUTE</p>
+    </footer>
+
+    <script>
+        'use strict';
+        
+        // selectボックスのデフォルトか未選択時の表示の色をグレーにしてplaceholderの代わりにする
+        const selectTarget = document.querySelectorAll('select');
+        for (let i = 0; i < selectTarget.length; i++) {
+            selectTarget[i].addEventListener('change', function() {
+                if (selectTarget[i].value !== "") {
+                    this.classList.remove('empty');
+                } else {
+                    this.classList.add('empty');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

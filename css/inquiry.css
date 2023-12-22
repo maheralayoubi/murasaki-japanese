@@ -1,0 +1,608 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-family: 'Noto Sans', sans-serif;
+    color: #333333;
+    --base-color: #390b6c;
+    --base-color-lite: #f7f5fa;
+}
+
+.body-jp {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-weight: 300;
+}
+
+input[type="text"], select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #636363;
+    border-radius: 3px;
+}
+
+select {
+    background: top 50% right 5px / 10px 10px no-repeat url('../img/icons/arrow_down.svg');
+}
+
+select.empty {
+    color: #757575;
+}
+
+.form-head{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #390b6c;
+}
+
+.form-head img {
+    vertical-align: middle;
+    width: 310px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    border-top: 4px solid var(--base-color);
+    border-image: linear-gradient(to right, #ccb6dc 20px, #6937a3 20px, #6937a3 40px, white 40px, white 100%);
+    border-image-slice: 1; 
+    padding-top: 15px;
+}
+
+.body-jp h1 {
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.form-area{
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto 100px;
+}
+
+.form-contents{
+    margin-top: 50px;
+}
+
+.form-required {
+    margin-bottom: 5px;
+    padding-left: 3px;
+}
+
+.body-jp .form-required {
+    padding-left: 0;
+}
+
+table.formTable {
+    width:100%;
+    margin:0 auto;
+    border-collapse:collapse;
+}
+
+table.formTable td, table.formTable th {
+    padding: 30px;
+    border: 1px solid rgb(215, 206, 222);
+}
+
+table.formTable th {
+    width: 25%;
+    font-weight: normal;
+    background: #f5f2f8;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.formTable td {
+    width: 75%;
+    vertical-align: middle;
+}
+
+.subject select{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.double-input {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.double-input input,
+.double-input select {
+    width: 49%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.double-input select {
+    margin-top: 4px;
+}
+
+.input-full input,
+.input-full select {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.how select {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.detail textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.confirm-button {
+    width: 400px;
+    padding: 20px 0;
+    font-size: 20px;
+    background: #390b6c;
+    color: white;
+    border-radius: 10px;
+}
+
+.reset-button {
+    padding: 5px 25px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+.form-asterisk {
+    display: inline-block;
+}
+
+.form-asterisk::after{
+    content: "*";
+    color: red
+}
+
+.privacy-area {
+    background-color: #f5f2f8;
+    padding: 30px;
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+.privacy-area p:first-of-type{
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: auto;
+}
+
+footer p {
+    padding: 20px 0;
+    border-top: 1px solid var(--base-color);
+    font-size: 15px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.message {
+    border: none;
+    text-align: center;
+}
+
+.error-contents {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.error-detail {
+    color: red;
+}
+
+.top-button {
+    width: 400px;
+    padding: 20px 0;
+    margin: 50px auto 0;
+    display: block;
+    font-size: 20px;
+    background: #390b6c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* TRIAL FORM                              TRIAL FORM */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.trial-area h1 {
+    margin-bottom: 50px;
+}
+
+.steps-contents ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    list-style: none;
+}
+
+.steps-each-title {
+    margin-bottom: 20px;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    background-color: var(--base-color-lite);
+}
+
+.steps-each-title p:first-child{
+    width: 140px;
+    text-align: center;
+    color: var(--base-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.steps-each-title p:last-child{
+    width: calc(100% - 140px);
+}
+
+.steps-each-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps-each-text p {
+    width: calc(100% - 125px);
+}
+
+.steps-each-arrow {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps-each-arrow span {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+
+    -webkit-mask-image: url(../img/icons/arrow-double_down.png);
+    -webkit-mask-position: 0 0;
+	-webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+	mask-image: url(../img/icons/arrow-double_down.png);
+	mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    mask-position: 0 0;
+    background-color: var(--base-color-lite);
+}
+
+.trial-area .form-contents {
+    margin-top: 80px;
+}
+
+.style ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 10px;
+    list-style: none;
+}
+
+.style ul li {
+    display: flex;
+    align-items: center;
+}
+
+.note-upper {
+    font-size: 15px;
+}
+
+.courses ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    list-style: none;
+}
+
+.courses input {
+    margin-right: 5px;
+}
+
+.courses label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.schedule ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    list-style: none;
+}
+
+.schedule input {
+    margin-top: 5px;
+}
+
+.note-under {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+
+.confirm-double {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SEMINARS FORM                        SEMINARS FORM */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.seminars-list {
+    list-style: none;
+}
+
+.seminars-list li:not(*:first-child) {
+    margin-top: 10px;
+}
+
+.seminars-list label {
+    padding-left: 1em;
+    position: relative;
+}
+
+.seminars-list label input {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+}
+
+.address-list {
+    list-style: none;
+}
+
+.address-list li:last-child{
+    margin-top: 20px;
+}
+
+.address-list input {
+    width: 49%;
+    margin-top: 5px;
+}
+
+.address-list textarea {
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .double-input input {
+        width: 100%;
+    }
+
+    .double-input select {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .form-head img {
+        width: 250px;
+    }
+
+    .form-area{
+        margin: 50px auto 100px;
+    }
+
+    .form-contents{
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+        border-image: linear-gradient(to right, #ccb6dc 16px, #6937a3 16px, #6937a3 32px, white 30px, white 100%);
+        border-image-slice: 1; 
+    }
+
+    table.formTable tr:not(table.formTable tr:last-of-type){
+        border-bottom: 10px solid white;
+    }
+
+    table.formTable td, table.formTable th {
+        width: 100%;
+        display: block;
+    }
+
+    table.formTable th {
+        padding: 15px;
+    }
+
+    table.formTable td {
+        min-height: 80px;
+        padding: 30px 15px;
+    }
+
+    .privacy-area {
+        padding: 20px;
+    }
+    
+    .privacy-area p:first-of-type{
+        margin-bottom: 10px;
+    }
+
+
+
+
+    .steps-each-title {
+        font-size: 20px;
+    }
+
+    .steps-each-title p:first-child{
+        width: 100px;
+    }
+    
+    .steps-each-title p:last-child{
+        width: calc(100% - 100px);
+    }
+
+    .steps-each-text {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .steps-each-text p {
+        width: 100%;
+        padding: 0 5px;
+    }
+    
+    .steps-each-arrow {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .steps-contents ul li:last-child .steps-each-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-head{
+        padding: 15px 0;
+    }
+
+    .form-head img {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    table.formTable th {
+        padding: 10px;
+    }
+
+    table.formTable td {
+        min-height: 60px;
+        padding: 20px 10px;
+    }
+
+    .privacy-area {
+        margin-top: 30px;
+        padding: 15px 20px;
+    }
+    
+    .privacy-area p:first-of-type{
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .confirm-button {
+        width: 100%;
+    }
+    
+    .buttons {
+        margin: 50px 0 100px;
+    }
+
+    .top-button {
+        width: 100%;
+    }
+
+    footer p {
+        padding: 10px 0;
+    }
+
+
+
+
+
+
+    .steps-each-title {
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+
+    .trial-area h1 {
+        margin-bottom: 30px;
+    }
+
+    .steps-contents ul {
+        row-gap: 15px;
+    }
+
+    .steps-each-title {
+        font-size: 17px;
+    }
+
+    .steps-each-title p:first-child{
+        width: 80px;
+    }
+    
+    .steps-each-title p:last-child{
+        width: calc(100% - 80px);
+    }
+
+    .steps-each-arrow {
+        margin-top: 15px;
+    }
+
+
+    .steps-each-arrow span {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+    }
+}

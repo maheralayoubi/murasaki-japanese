@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>Inquiry Form</title>
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/inquiry.css">
+</head>
+
+<body>
+    <div class="form-head">
+        <img src="img/footer_mji-logo.png">
+    </div>
+    <div class="form-area" id="formWrap">
+        <h1>Inquiry Form</h1>
+        <p>
+            Please fill out and send the following form for your inquiry.
+            When the form is successfully submitted, you recieve an auto reply email that confirms your submission.
+            We will respond to your inquiry within a couple of business days.
+        </p>
+        <div class="form-contents">
+            <p class="form-required">All the fields with "<span class="form-asterisk"></span>" are required.</p>
+            <form method="post" action="form_submit" name="inquiry_form">
+                <input type="hidden" name="form_type" value="inquiry" checked="checked">
+                <table class="formTable">
+                    <tr class="subject">
+                        <th>Subject<span class="form-asterisk"></span></th>
+                        <td>
+                            <select name="Subject" class="empty">
+                                <option value="">Please select</option>
+                                <option value="Japanese Courses">Japanese Courses</option>
+                                <option value="Corporate Lessons">Corporate Lessons</option>
+                                <option value="Teacher Training">Teacher Training</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="name">
+                        <th>Name<span class="form-asterisk"></span></th>
+                        <td><div class="double-input">
+                            <input size="20" type="text" name="First_name" placeholder="First name" />
+                            <input size="20" type="text" name="Last_name" placeholder="Last name" />
+                        </div></td>
+                    </tr>
+                    <tr class="input-full">
+                        <th>Email<span class="form-asterisk"></span></th>
+                        <td><input size="30" type="text" name="Email" placeholder="example@domain.com" /></td>
+                    </tr>
+                    <tr class="input-full">
+                        <th>Phone</th>
+                        <td><input size="30" type="text" name="Phone" /></td>
+                    </tr>
+                    <tr class="how">
+                        <th>How did you find our school first?</th>
+                        <td>
+                            <select name="How" class="empty">
+                                <option value="">Please select</option>
+                                <option value="Google search">Google search</option>
+                                <option value="Other web browsers">Other web browsers</option>
+                                <option value="Other websites">Other websites</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="Other SNS">Other SNS</option>
+                                <option value="Friends/Family">Friends/Family</option>
+                                <option value="Coworkers/Supervisors">Coworkers/Supervisors</option>
+                                <option value="Judicial Scriveners">Judicial Scriveners</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="detail">
+                        <th>Inquiry<span class="form-asterisk"></span></th>
+                        <td><textarea name="Inquiry" cols="50" rows="5" maxlength="1000" placeholder="Please fill in within 1000 characters."></textarea></td>
+                    </tr>
+                </table>
+
+                <div class="privacy-area">
+                    <p>Protection of Personal Information</p>
+                    <p>MURASAKI JAPANESE INSTITUTE will manage your personal information submitted via this form in accordance with our <a href="privacy-policy.html">privacy policy</a>.</p>
+                </div>
+
+                <p class="buttons">
+                    <input type="submit" value="Confirm" class="confirm-button"/><input type="reset" value="Reset" class="reset-button" />
+                </p>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; MURASAKI JAPANESE INSTITUTE</p>
+    </footer>
+
+    <script>
+        'use strict';
+        
+        // selectボックスのデフォルトか未選択時の表示の色をグレーにしてplaceholderの代わりにする
+        const selectTarget = document.querySelectorAll('select');
+        for (let i = 0; i < selectTarget.length; i++) {
+            selectTarget[i].addEventListener('change', function() {
+                if (selectTarget[i].value !== "") {
+                    this.classList.remove('empty');
+                } else {
+                    this.classList.add('empty');
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

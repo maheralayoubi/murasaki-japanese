@@ -1,0 +1,183 @@
+/* Free Trial Lesson */
+.trial-area {
+    background: linear-gradient(to right, #fff3fb 0%, #fff3fb 50%, #fff3fb28 100%);
+    padding: 80px 0 70px;
+    position: relative;
+    margin: 50px 0;
+}
+
+.trial-image {
+    background-image: url("../img/trial-contact/trial.jpg");
+    background-size: cover;
+    background-position: 50%;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.trial-contents {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.trial-contents-inner h2 {
+    text-align: left;
+    font-size: 50px;
+    color: rgb(255, 106, 168);
+    line-height: 1;
+}
+
+.trial-contents-inner h3 {
+    color: rgb(255, 177, 210);
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.trial-contents-text {
+    margin-top: 10px;
+}
+
+.index-trial-button {
+    margin-top: 50px;
+}
+
+.index-trial-button a{
+    width: 50%;
+    min-width: 450px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgb(255, 0, 111);
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    background-image: url(../img/icons/arrow_right_white.svg);
+    background-repeat: no-repeat;
+    background-position: top 50% right 4%;
+    background-size: auto 22%;
+    transition: background-color .2s, color .2s;
+}
+
+.index-trial-button a:hover{
+    color: white;
+    background-color: rgb(255, 125, 181);
+}
+
+.index-trial-arrow {
+    width: 15px;
+    margin-left: 10px;
+    fill: white;
+}
+
+.br-add500 {
+    display: none;
+}
+
+
+
+.ja-trial-area h2 {
+    font-size: 42px;
+}
+
+.ja-trial-area h3 {
+    font-size: 28px;
+}
+
+
+
+@media (max-width: 768px) {
+    /* ----- NEWS 768 -----  ----- NEWS 768 -----  ----- NEWS 768 -----  ----- NEWS 768 -----  ----- NEWS 768-----  */
+    .news-area {
+        padding: 80px 0 100px;
+    }
+    
+    .news-contents ul li {
+        padding: 20px 10px;
+        display: block;
+    }
+    
+    .news-contents ul li p:first-of-type {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .news-contents ul li p:last-of-type {
+        width: 100%;
+        margin-top: 5px;
+        padding-left: 0;
+    }
+
+    /* ----- FFREE TRIAL 768 -----  ----- FFREE TRIAL 768 -----  ----- FFREE TRIAL 768 ----- */
+    .trial-area {
+        background: #fff3f9e4;
+        padding: 50px 0;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .trial-image {
+        background-position: 20%;
+        width: 100%;
+    }
+
+    .trial-contents-inner h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .trial-contents-inner h3 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .br-remove768 {
+        display: none;
+    }
+
+    .index-trial-button a{
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    /* ----- FREE TRIAL 500 -----  ----- FREE TRIAL 500 -----  ----- FREE TRIAL 500 ----- */
+    .trial-contents-inner h2 {
+        font-size: 28px;
+    }
+
+    .trial-contents-inner h3 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .trial-contents-text {
+        text-align: center;
+    }
+
+    .br-add500 {
+        display: initial;
+    }
+
+    .index-trial-button a{
+        padding: 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: rgb(255, 0, 111);
+        font-size: 17px;
+        text-decoration: none;
+        color: white;
+    }
+}

@@ -1,0 +1,242 @@
+footer {
+    width: 100%;
+    background-color: #390b6c;
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contents {
+    Width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 120px 0 50px;
+    display: flex;
+}
+
+.footer-contents > ul  {
+    width: 75%;
+    list-style: none;
+    column-count: 2;
+}
+
+.footer-contents > ul > li {
+    break-inside: avoid;
+    margin-top: 30px;
+}
+
+.footer-contents > ul > li:first-of-type {
+    margin-top: 0;
+}
+
+.footer-contents > ul > li > a {
+    padding-left: 35px;
+    background-image: url('../img/icons/footer_arrowcircle-icon.png');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position-y: 50%;
+}
+
+.footer-contents > ul > li > ul > li {
+    margin-top: 20px;
+    padding-left: 35px;
+    background-image: url('../img/icons/footer_arrow-icon.png');
+    background-repeat: no-repeat;
+    background-size: 7px;
+    background-position: 5px 50%;
+}
+
+.footer-contents-right {
+    width: 25%;
+}
+
+.footer-contact,
+.footer-trial {
+    width: 100%;
+}
+
+.footer-contact a {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: inline-block;
+    background-image: url(../img/icons/arrow_right_white.svg);
+    background-repeat: no-repeat;
+    background-size: auto 17%;
+    background-position: top 50% right 15px;
+    text-align: center;
+    border: 2px solid white;
+    transition: background-color .2s;
+}
+
+.footer-trial a {
+    width: 100%;
+    padding: 20px 0;
+    display: inline-block;
+    background-image: url(../img/icons/arrow_right_white.svg);
+    background-repeat: no-repeat;
+    background-size: auto 17%;
+    background-position: top 50% right 15px;
+    text-align: center;
+    border: 2px solid white;
+    transition: background-color .2s;
+}
+
+.footer-contact a:hover,
+.footer-trial a:hover {
+    background-color: #7855a0;
+}
+
+.footer-contents-right ul {
+    margin-top: 50px;
+    display: flex;
+    column-gap: 5px;
+}
+
+.footer-contents-right ul li img {
+    width: 28px;
+}
+
+.footer-bottom {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+}
+
+.footer-bottom-logo {
+    width: 370px;
+}
+
+.footer-bottom img {
+    width: 100%;
+}
+
+.school-info {
+    line-height: 2;
+    margin-left: 20px;
+    padding-left: 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.058);
+    font-size: 15px;
+}
+
+.copyright {
+    margin: 60px 0 0;
+    padding: 10px;
+    background-color: #230642;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .footer-contents {
+        display: block;
+    }
+
+    .footer-contents > ul {
+        width: 100%;
+    }
+
+    .footer-contents-right{
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .footer-contents-right-buttons{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-trial,
+    .footer-contact {
+        width: 49%;
+    }
+
+    .footer-contact a{
+        margin-top: 0;
+    }
+
+
+    .footer-bottom {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-bottom-logo{
+        width: 100%;
+    }
+
+    .footer-bottom-logo img {
+        width: 370px;
+    }
+
+    .school-info {
+        margin-top: 10px;
+        margin-left: 0;
+        padding: 0;
+        border-left: unset;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-contents {
+        padding: 80px 0;
+    }
+
+    .footer-contents > ul {
+        font-size: 15px;
+    }
+
+    .footer-contents-right{
+        margin-top: 70px;
+    }
+
+    .footer-trial,
+    .footer-contact {
+        width: 100%;
+    }
+
+    .footer-contact a{
+        margin-top: 20px;
+    }
+
+    .footer-bottom {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-contents {
+        padding: 50px 0;
+    }
+
+    .footer-contents > ul {
+        column-count: 1;
+    }
+
+    .footer-bottom {
+        padding-top: 30px;
+        text-align: left;
+    }
+
+    .footer-bottom-logo img {
+        width: 280px;
+    }
+}
+

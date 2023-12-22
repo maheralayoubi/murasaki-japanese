@@ -1,0 +1,738 @@
+/* ----- Common -----  ----- Common -----  ----- Common -----  ----- Common -----  ----- Common ----- */
+body {
+    color: #333333;
+    line-height: 1.7;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.root {
+    padding-left: 5.2%;
+    height: 40px;
+    border-top: 2px solid #f8f2ff;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 130px;
+}
+
+.root ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.root ul li {
+    margin-right: 15px;
+}
+
+.root a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.root-arrow {
+    width: 8px;
+    margin-right: 15px;
+    padding-bottom: 1px;
+}
+
+.course-head-container {
+    height: 380px;
+    background: linear-gradient(to right, #390b6c 0%, #390b6c 45%, #380b6c33 90%);
+    position: relative;
+}
+
+.course-head-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.course-head-image {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.course-head-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-jp {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.course-contents {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.course-contents:last-of-type {
+    margin-bottom: 100px;
+}
+
+.each-title {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 33px;
+    color: #310d5a;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+}
+
+.square {
+    width: 35px;
+    height: 35px;
+    background-color: #f3ecfb;
+    margin-right: 8px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #310d5a;
+}
+
+
+
+/* ----- Introduction -----  ----- Introduction -----  ----- Introduction -----  ----- Introduction -----  ----- Introduction ----- */
+.intro-container h2 {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.intro-container p {
+    margin-top: 20px;
+}
+
+
+
+/* ----- Index -----  ----- Index -----  ----- Index -----  ----- Index -----  ----- Index ----- */
+.index-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;;
+}
+
+.index-wrapper svg{
+    fill: #390b6c;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.index-wrapper li {
+    color: #390b6c;
+    list-style: none;
+    padding: 10px 20px;
+    border: 2px solid #390b6c;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.index-wrapper a {
+    text-decoration: none;
+    color: #390b6c;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+
+.index-wrapper li:hover {
+    background-color: #390b6c;
+}
+
+.index-wrapper li:hover a {
+    color: white;
+}
+
+.index-wrapper li:hover svg {
+    fill: white;
+    rotate: 90deg;
+}
+
+.features-arrow {
+    width: 15px;
+    height: 20px;
+    display: inline-block;
+}
+
+
+
+/* ----- 開講情報 -----  ----- 開講情報 -----  ----- 開講情報 -----  ----- 開講情報 -----  ----- 開講情報 ----- */
+.schedule-container > table {
+    width: 100%;
+}
+
+.schedule-container table th {
+    width: 25%;
+    vertical-align: middle;
+    color: white;
+    background-color: #390b6c;
+    border: 2px solid white;
+}
+
+.schedule-container > table > tbody > tr > td {
+    padding: 30px 40px;
+    background-color: #f8f6fa;
+    border: 2px solid white;
+}
+
+.year {
+    padding-right: 10px;
+}
+
+.date {
+    padding-right: 5px;
+}
+
+span.month,span.day{
+    display: inline-block;
+    width: 1.2em;
+    text-align: right;
+}
+
+.time {
+    border-left: 2px solid white;
+    padding-left: 20px;
+}
+
+.time p {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.fees-inner-table td {
+    vertical-align: middle;
+}
+
+.fees-inner-table td:first-child {
+    padding: 3px 0;
+}
+
+.fees-inner-table tr td:nth-child(3) {
+    padding-left: 10px;
+}
+
+.text-price {
+    padding-left: 20px;
+}
+
+.text-price-sp {
+    display: none;
+}
+
+.text-free {
+    color: red;
+}
+
+
+
+/* ----- 講座内容 -----  ----- 講座内容 -----  ----- 講座内容 -----  ----- 講座内容 -----  ----- 講座内容 ----- */
+.curriculum-container table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.curriculum-container ul {
+    list-style: decimal;
+    margin-left: 25px;
+}
+
+.curriculum-container ul li {
+    margin-top: 5px;
+}
+
+.curriculum-container ul li:first-child {
+    margin-top: 0;
+}
+
+.curriculum-container th {
+    padding: 0 20px;
+    vertical-align: middle;
+    color: white;
+    background-color: #390b6c;
+    border: 2px solid white;
+}
+
+.children-curriculum th {
+    width: 20%;
+}
+
+.chapter {
+    padding: 10px 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #e0d5ec;
+    border: 2px solid white;
+}
+
+.clause {
+    padding: 30px 30px;
+    vertical-align: middle;
+    background-color: #f8f6fa;
+    border: 2px solid white;
+}
+
+
+
+/* ----- 受講者の声 -----  ----- 受講者の声 -----  ----- 受講者の声 -----  ----- 受講者の声 -----  ----- 受講者の声 ----- */
+.voice-container ul {
+    list-style: none;
+}
+
+.voice-each-header {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px #1e08377c;
+    padding: 10px 30px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.voice-each-icon {
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #593d76;
+    border-radius: 50%;
+}
+
+.voice-each-title {
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.voice-each-text {
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.voice-each-text p {
+    padding: 10px 20px 30px 100px;
+}
+
+.voice-each-text p span {
+    display: block;
+    text-align: right;
+}
+
+.voice-each-plus {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-left: auto;
+}
+
+.voice-each-plus span {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #390b6c;
+}
+
+.voice-each-plus span:first-child {
+    position: absolute;
+    top: 50%;
+    transition: .3s;
+}
+
+.voice-each-plus span:last-child {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+    transition: .3s;
+}
+
+.voice-each-plus.active span:first-child {
+    transform: rotate(90deg);
+    opacity: 0
+}
+
+.voice-each-plus.active span:last-child {
+    transform: rotate(180deg);
+}
+
+
+
+/* ----- その他の講座 -----  ----- その他の講座 -----  ----- その他の講座 -----  ----- その他の講座 -----  ----- その他の講座 ----- */
+.other-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.other-list h3 {
+    font-size: 22px;
+    height: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-line {
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+.other-list li {
+    width: 49%;
+    height: 160px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 3px 3px 5px rgb(185, 185, 185);
+    list-style: none;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.other-list li:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.other-each {
+    width: 100%;
+    height: 160px;
+    color: white;
+    background-color: #1b063593;
+    position: absolute;
+    bottom: -110px;
+}
+
+.other-each {
+    transition: all .4s ease-out;
+}
+
+.other-list li:hover .other-each {
+    transform: translateY(-110px);
+}
+
+.other-list li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.other-text {
+    width: 90%;
+    font-size: 15px;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.other-text p {
+    width: 85%;
+}
+
+.other-arrow {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+    transition: .3s;
+}
+
+.arrow-inner {
+    position: absolute;
+    display: block;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+    transform-origin: center;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 17px;
+	margin: auto;
+    transition: .3s;
+}
+
+.other-arrow:hover {
+	background-color: white;
+}
+
+.other-arrow:hover .arrow-inner {
+	border-top: 2px solid #390b6c;
+	border-right: 2px solid #390b6c;
+}
+
+
+.br-sp {
+    display: none;
+}
+
+
+
+/* ----- Naturalization -----  ----- Naturalization -----  ----- Naturalization -----  ----- Naturalization -----  ----- Naturalization ----- */
+.naturalization-note li {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.naturalization-index .index-wrapper {
+    justify-content: left;
+    column-gap: 20px;
+    max-width: 800px;
+}
+
+.curriculum-intro,
+.assistance-intro {
+    margin-top: 30px;
+}
+
+.naturalization-details-table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.naturalization-details-table th{
+    padding: 15px;
+    vertical-align: middle;
+    color: white;
+    background-color: #390b6c;
+    border: 2px solid white;
+}
+
+.naturalization-details-table th:first-of-type{
+    width: 20%;
+}
+
+.naturalization-details-table tr:first-of-type th:nth-of-type(2){
+    width: 40%;
+}
+
+.naturalization-details-table tr:first-child > *:first-child {
+    background-color: white;
+}
+
+
+.naturalization-details-table td {
+    padding: 15px 40px;
+    line-height: 25px;
+    background-color: #f8f6fa;
+    border: 2px solid white;
+    vertical-align: middle;
+}
+
+.fees-table td {
+    padding: 15px 30px;
+    line-height: 25px;
+    background-color: #f6f4f8;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    body {
+        /* font-size: 15px; */
+    }
+
+    .root {
+        font-size: 12px;
+        margin: 70px auto 0;
+        padding: 10px 0 10px 5vw;
+    }
+
+    .course-head-container {
+        height: 350px;
+        background: #250747a2;
+    }
+    
+    .course-head-image {
+        width: 100%;
+    }
+
+    h1 {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        font-size: 25px;
+        text-align: center;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .intro-container h2 {
+        font-size: 5.5vw;
+    }
+
+    .br-def {
+        display: none;
+    }
+
+    .course-contents {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    /* index */
+    .index-wrapper {
+        display: block;
+    }
+
+    .index-wrapper ul{
+        border: 1px solid #390b6c;
+    }
+    
+    .index-wrapper li {
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #eee2fb;
+        margin-top: 10px;
+        background-color: #fdfbff;
+    }
+    
+
+    /* Features */
+    .features-container svg{
+        width: 30px;
+        margin-right: 10px;
+        fill: #390b6c;
+    }
+
+
+
+    /* Levels */
+    .levels-container h3 {
+        font-size: 25px;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .level-each {
+        padding: 25px 20px;
+        margin-top: 30px;
+        border: 1px solid #390b6c;
+    }
+
+    .level-each-title {
+        /* text-align: center; */
+        display: block;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f2e8fe;
+    }
+
+    .level-each-intro {
+        padding-left: 0;
+        margin-top: 10px;
+        /* border-bottom: 5px solid #8f78ab; */
+    }
+
+    /* .level-each-text {
+        margin-top: 30px;
+    } */
+
+    /* .level-each-goal {
+        margin-top: 30px;
+    } */
+
+    /* .level-each-goal ul {
+        margin-top: 8px;
+        margin-left: 20px;
+    } */
+
+    
+    .details-table th {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+    
+    .details-table td {
+        width: 100%;
+        display: block;
+        padding: 15px 15px 15px 30px;
+        box-sizing: border-box;
+    }
+
+    .fees-table th {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .fees-table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        box-sizing: border-box;
+    }
+
+    .br-sp {
+        display: block;
+    }
+
+    .space-def {
+        display: none;
+    }
+
+
+
+}
+
+
+
+

@@ -1,0 +1,1002 @@
+/* ==================================================================================================== */
+/* MEDIA QUERY 1200     MEDIA QUERY 1200     MEDIA QUERY 1200     MEDIA QUERY 1200     MEDIA QUERY 1200 */
+/* ==================================================================================================== */
+@media (max-width: 1200px) {
+    /* -------------------------------------------------- */
+    /* COMMON 1200                            COMMON 1200 */
+    /* -------------------------------------------------- */
+    .add1200 {
+        display: initial;
+    }
+
+    .remove1200 {
+        display: none;
+    }
+
+    /* -------------------------------------------------- */
+    /* SWIPER 1200                            SWIPER 1200 */
+    /* -------------------------------------------------- */
+    .swiper-container {
+        width: 95%;
+        height: calc(100vh - 100px - 2.5vw);
+        margin: 0 auto;
+    }
+
+    .slide-text {
+        font-size: 35px;
+    }
+
+    .slide-link-contents {
+        font-size: 18px;
+        padding: 10px 40px;
+    }
+
+    .slide-arrow {
+        width: 11px;
+        right: 10px;
+    }
+
+    .index-jp .slide-link-contents {
+        font-size: 18px;
+        padding: 9px 45px 10px;
+    }
+
+    /* -------------------------------------------------- */
+    /* INTRODUCTION1200                 INTRODUCTION 1200 */
+    /* -------------------------------------------------- */
+    .intro-area {
+        padding: 80px 0 130px 0;
+    }
+
+    .intro-contents-upper {
+        padding-bottom: 20px;
+    }
+
+    .mji-fill {
+        font-size: 18vw;
+    }
+
+    .intro-contents h1 {
+        font-size: 2.7vw;
+    }
+
+    .index-jp h1 {
+        font-size: 2.4vw
+    }
+
+    /* -------------------------------------------------- */
+    /* COURSES 1200                          COURSES 1200 */
+    /* -------------------------------------------------- */
+    .courses-each-text {
+        font-size: min(1.4vw, 14px);
+        padding: 5%;
+    }
+}
+
+
+
+/* ==================================================================================================== */
+/* MEDIA QUERY 1000     MEDIA QUERY 1000     MEDIA QUERY 1000     MEDIA QUERY 1000     MEDIA QUERY 1000 */
+/* ==================================================================================================== */
+@media (max-width: 1000px) {
+    /* -------------------------------------------------- */
+    /* COMMON 1000                            COMMON 1000 */
+    /* -------------------------------------------------- */
+    .add1000 {
+        display: initial;
+    }
+
+    .remove1000 {
+        display: none;
+    }
+
+    /* -------------------------------------------------- */
+    /* SWIPER 1000                            SWIPER 1000 */
+    /* -------------------------------------------------- */
+    .swiper-container {
+        height: calc(100vh - 100px - 28vw);
+        aspect-ratio: 15 / 8;
+        margin: 0 auto;
+        max-height: 900px;
+    }
+
+    .slide-text {
+        font-size: 30px;
+    }
+
+    .slide-link-contents {
+        font-size: 17px;
+    }
+
+    .index-jp .slide-link-contents {
+        font-size: 17px
+    }
+
+    /* -------------------------------------------------- */
+    /* INTRODUCTION 1000                INTRODUCTION 1000 */
+    /* -------------------------------------------------- */
+    .intro-area {
+        padding: 4vw 0 100px 0;
+        max-width: 900px;
+    }
+
+    .intro-contents {
+        width: 100%;
+    }
+
+    .intro-contents-upper {
+        height: 25vw;
+        padding-bottom: 2vw;
+    }
+
+    .mji-fill {
+        font-size: 18.5vw;
+    }
+
+    .intro-contents h1 {
+        margin-left: 2.5vw;
+    }
+
+    .index-jp h1 {
+        margin-left: 2vw
+    }
+
+    /* -------------------------------------------------- */
+    /* WHY 1000                                  WHY 1000 */
+    /* -------------------------------------------------- */
+    .why-icon {
+        width: 60px;
+        fill: #390b6c;
+    }
+    
+    .why-contents {
+        padding: 80px 0;
+    }
+    
+    .why-contents-list {
+        display: block;
+    }
+    
+    .why-contents-list li {
+        width: 100%;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* -------------------------------------------------- */
+    /* COURSES 1000                          COURSES 1000 */
+    /* -------------------------------------------------- */
+    .courses-each h3 {
+        height: 7vw;
+        padding: 5%;
+        font-size: min(2.9vw, 26px);
+    }
+
+    .courses-contents ul {
+        row-gap: 1.7vw;
+    }
+
+    .courses-contents li {
+        width: 49%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .courses-contents ul li:hover {
+        transform: unset;
+    }
+
+    .courses-contents ul li:hover .courses-each {
+        transform: translateY(calc((100% - 7vw) * -1));
+    }
+
+    .courses-each {
+        top: calc(100% - 7vw);
+    }
+
+    .courses-each a {
+        transition: .4s;
+    }
+
+    .courses-each-text {
+        font-size: min(1.7vw, 16px);
+        font-size: max(1.7vw, 14px);
+    }
+
+    .more-details {
+        margin-top: 3vw;
+        font-size: min(1.7vw, 16px);
+    }
+
+    .more-details-arrow {
+        width: 1.4vw;
+        max-width: 13px;
+    }
+
+    /* -------------------------------------------------- */
+    /* CORPORATE LESSONS 1000      CORPORATE LESSONS 1000 */
+    /* -------------------------------------------------- */
+    .corporate-contents-inner {
+        margin-top: 50px;
+    }
+
+    .corporate-contents-innerupper {
+        flex-wrap: wrap;
+    }
+    
+    .corporate-contents-innerupper p:first-child{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .corporate-contents-innerupper p:last-child{
+        width: 100%;
+    }
+
+    .corporate-contents-innerupper p {
+        width: 100%;
+    }
+
+    .corporate-contents-image {
+        height: auto;
+        aspect-ratio: 1 / 1;
+        background-image: url('../img/top/top_corporate_sp.jpg');
+        margin-top: 30px;
+    }
+
+
+    .br-remove1000 {
+        display: none;
+    }
+
+    .corporate-contents-innerlower ul {
+        column-gap: 2.5%;
+    }
+
+    .corporate-contents-innerlower ul li {
+        width: 18%;
+    }
+
+    /* -------------------------------------------------- */
+    /* LOCATION 1000                        LOCATION 1000 */
+    /* -------------------------------------------------- */
+    .location-contents {
+        margin-top: 50px;
+        display: block;
+    }
+
+    .location-contents-left {
+        width: 100%;
+    }
+
+    .location-each-image {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .location-contents-image img{
+        width: 100%;
+    }
+
+    .location-contents-left ul li {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #dfd8e7;
+    }
+
+    .location-contents-left ul li:first-child {
+        padding: 0 0 30px 0;
+    }
+
+    .location-contents-left ul li:last-child {
+        border-bottom: none;
+    }
+
+    .location-each-image {
+        width: 20%;
+        min-width: 160px;
+    }
+
+    .location-each-image img {
+        width: 100%;
+    }
+
+    .location-contents-left-eachtitle {
+        text-align: left;
+    }
+
+    .location-each-text{
+        width: 80%;
+        padding-left: 20px;
+    }
+}
+
+
+
+/* ==================================================================================================== */
+/* MEDIA QUERY 768      MEDIA QUERY 768      MEDIA QUERY 768      MEDIA QUERY 768       MEDIA QUERY 768 */
+/* ==================================================================================================== */
+@media (max-width: 768px) {
+    /* -------------------------------------------------- */
+    /* COMMON 768                              COMMON 768 */
+    /* -------------------------------------------------- */
+    .add768 {
+        display: initial;
+    }
+
+    .remove768 {
+        display: none;
+    }
+
+    .headline-upper {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: #3a1169;
+        margin-bottom: 15px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .headline-line {
+        height: 3px;
+        width: 40px;
+        background-color: #390b6c;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .br-sp {
+        display:initial;
+    }
+    
+    /* -------------------------------------------------- */
+    /* SWIPER 768                              SWIPER 768 */
+    /* -------------------------------------------------- */
+    .swiper-container {
+        width: 95%;
+        height: calc(100vh - 60px - 299px);
+    }
+
+    .slide-text {
+        font-size: 25px;
+    }
+
+    .index-jp .slide-text {
+        font-size: 24px;
+    }
+
+    .slide-link-contents {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    .index-jp .slide-link-contents {
+        font-size: 16px;
+        padding: 8px 40px 9px;
+    }
+
+    /* -------------------------------------------------- */
+    /* INTRODUCTION 768                  INTRODUCTION 768 */
+    /* -------------------------------------------------- */
+    .intro-area {
+        padding: 30px 0 80px;
+    }
+
+    .intro-contents-upper {
+        height: 270px;
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    .intro-contents h1 {
+        font-size: 21.5px;
+        line-height: 1.5;
+        margin-left: 0vw;
+        margin-top: 15px;
+    }
+
+    .index-jp h1 {
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    .intro-contents-lower p {
+        width: 100%;
+        min-width: unset;
+        margin-top: 30px;
+        text-align: unset;
+        line-height: 1.5;
+    }
+
+    .mji-wrapper {
+        display: flex;
+    }
+
+    .mji-fill {    
+        font-size: 120px;
+        font-family: 'DM Serif Display', serif;
+    }
+
+    .scrolldown {
+        width: 7%;
+        max-width: 40px;
+        display: block;
+        position: absolute;
+        top: 7%;
+        right: 0;
+        text-align: center;
+        font-weight: 500;
+        color: #735495;
+        font-size: min(3.2vw, 15px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scrolldown svg{
+        width: 70%;
+        margin: 0 auto;
+        transform: rotate(90deg);
+        fill: #735495;
+    }
+
+    /* -------------------------------------------------- */
+    /* WHY 768                                    WHY 768 */
+    /* -------------------------------------------------- */
+    .wakamurasaki {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: unset;
+        max-width: unset;
+        min-width: unset;
+    }
+    
+    .wakamurasaki img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .2;
+        object-position: top;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .why-contents h3 {
+        font-size: 18px;
+    }
+
+    .why-contents-list {
+        margin-top: 30px;
+    }
+
+    .why-each-header {
+        padding: 30px 0;
+    }
+
+    .why-contents-list li {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .why-contents-each-detail {
+        width: 100%;
+    }
+
+    .why-icon {
+        width: 45px;
+    }
+
+    .why-each-text {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s linear;
+    }
+
+    .why-each-text article {
+        margin-top: 0;
+        padding: 10px 0 40px;
+    }
+
+    .why-arrow {
+        display: block;
+        width: 15px;
+        margin-left: auto;
+        margin-right: 10px;
+        fill: #390b6c;
+        transition: .5s;
+    }
+
+    .why-arrow.active {
+        transform: rotate(180deg);
+    }
+
+    /* -------------------------------------------------- */
+    /* COURSES 768                            COURSES 768 */
+    /* -------------------------------------------------- */
+    .courses-contents h3 {
+        font-size: min(3.2vw, 16px);
+        font-size: max(3.2vw, 16px);
+    }
+
+    .courses-contents ul {
+        row-gap: 1vw;
+    }
+
+    .courses-contents li {
+        width: 49.5%;
+        aspect-ratio: 1 / 1;
+
+    }
+
+    .courses-each {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: #0e05266c;
+    }
+
+    .courses-each-contents {
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+    }
+
+    .courses-each a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .courses-contents ul li:hover .courses-each {
+        transform: unset;
+    }
+
+    .courses-contents ul li:hover .courses-each a{
+        top: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+    }
+
+    .courses-each-line {
+        display: none;
+    }
+
+    .courses-each-text {
+        display: none;
+    }
+
+    .more-details {
+        display: none;
+    }
+
+    .courses-link a{
+        width: 100%;
+    }
+
+    /* -------------------------------------------------- */
+    /* CORPORATE LESSONS 768        CORPORATE LESSONS 768 */
+    /* -------------------------------------------------- */
+    .corporate-contents-innerupper {
+        padding: 50px 0;
+    }
+    
+    .corporate-contents-innerupper p:first-child{
+        font-size: 24px;
+    }
+
+    .index-jp .corporate-contents-innerupper p:first-child{
+        font-size: 24px;
+    }
+
+    .corporate-contents-innerlower-text {
+        font-size: 16px;
+    }
+
+    .more60 {
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    .corporate-contents-innerlower ul {
+        column-gap: 4%;
+    }
+
+    .corporate-contents-innerlower ul li {
+        width: 22%;
+    }
+
+    /* -------------------------------------------------- */
+    /* LOCATION 768                          LOCATION 768 */
+    /* -------------------------------------------------- */
+    .location-area h3{
+        font-size: 18px;
+    }
+
+    .location-contents-image {
+        width: 100%;
+    }
+
+    .location-contents-image img{
+        width: 110%;
+    }
+
+    /* -------------------------------------------------- */
+    /* NEWS 768                                  NEWS 768 */
+    /* -------------------------------------------------- */
+    .news-area {
+        padding: 80px 0 100px;
+    }
+    
+    .news-contents ul li {
+        padding: 20px 10px;
+        display: block;
+    }
+    
+    .news-contents ul li p:first-of-type {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .news-contents ul li p:last-of-type {
+        width: 100%;
+        margin-top: 5px;
+        padding-left: 0;
+    }
+
+    /* -------------------------------------------------- */
+    /* FREE TRIAL 768                      FREE TRIAL 768 */
+    /* -------------------------------------------------- */
+    .trial-area {
+        background: #fff3f9e4;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    .trial-image {
+        background-position: 20%;
+        width: 100%;
+    }
+
+    .trial-contents-inner h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .index-jp .trial-contents-inner h2 {
+        font-size: 30px;
+    }
+
+    .trial-contents-inner h3 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .index-jp .trial-contents-inner h3 {
+        font-size: 22px;
+    }
+
+    .br-remove768 {
+        display: none;
+    }
+
+    .index-trial-button a{
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+
+
+/* ==================================================================================================== */
+/* MEDIA QUERY 500      MEDIA QUERY 500      MEDIA QUERY 500      MEDIA QUERY 500       MEDIA QUERY 500 */
+/* ==================================================================================================== */
+@media (max-width: 500px) {
+    /* -------------------------------------------------- */
+    /* COMMON 500                              COMMON 500 */
+    /* -------------------------------------------------- */
+    h2 {
+        font-size: 21px;
+    }
+
+    .headline-upper {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .headline-line {
+
+        width: 30px;
+        background-color: #390b6c;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .add500 {
+        display: initial;
+    }
+
+    .remove500 {
+        display: none;
+    }
+
+    /* -------------------------------------------------- */
+    /* SWIPER 500                              SWIPER 500 */
+    /* -------------------------------------------------- */
+    .swiper-container {
+        width: 95%;
+        height: calc(100vh - 59px - 54vw);
+        height: calc(var(--vh, 1vh) * 100 - 59px - 54vw);
+        height: calc(100svh - 59px - 54vw);
+        margin: 0 auto;
+        max-height: 900px;
+    }
+
+    .slide-text {
+        font-size: 4.8vw;
+    }
+
+    .index-jp .slide-text {
+        font-size: 4.7vw;
+    }
+
+    .slide-link-contents {
+        font-size: 3.3vw;
+        padding: 1.8vw 6vw;
+    }
+
+    .index-jp .slide-link-contents {
+        font-size: 3.5vw;
+        padding: 1.4vw 7vw 1.7vw;
+    }
+
+    .slide-arrow {
+        width: 2.3vw;
+        right: 1.6vw;
+    }
+
+    .first img {
+        object-position: 70% 50%;
+    }
+
+    .second img {
+        object-position: 35% 50%;
+    }
+
+    .third img {
+        object-position: 0% 50%;
+    }
+
+    /* -------------------------------------------------- */
+    /* INTRODUCTION 500                  INTRODUCTION 500 */
+    /* -------------------------------------------------- */
+    .mji-fill {    
+        font-size: 17.5vw;
+    }
+
+    .intro-area {
+        width: 91%;
+        padding: 5vw 0 50px;
+    }
+
+    .intro-contents-upper {
+        height: 50vw;
+    }
+
+    .intro-contents h1 {
+        margin-top: 10px;
+        font-size: 5vw;
+        font-family: 'Roboto Condensed';
+    }
+
+    .index-jp h1 {
+        font-size: 0;
+    }
+
+    .index-jp h1::before {
+        white-space: pre;
+        content: "ビジネス日本語に強い日本語学校\Aオンラインでも対面でもレッスンを提供\A初級から上級までレベルに合った学習プラン";
+        font-size: 4.5vw;
+    }
+
+    .intro-contents-lower p {
+        margin-top: 5vw;
+    }
+
+    .scrolldown {
+        width: 10%;
+        top: 5%;
+    }
+
+    /* -------------------------------------------------- */
+    /* WHY 500                                    WHY 500 */
+    /* -------------------------------------------------- */
+    .why-contents {
+        padding: 50px 0 60px;
+    }
+
+    .why-contents h3 {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+
+    .why-contents-list {
+        margin-top: 20px;
+    }
+
+    .why-each-header {
+        padding: 23px 0;
+    }
+
+    .why-icon {
+        width: 30px;
+    }
+
+    .why-arrow {
+        width: 12px;
+    }
+
+    .why-arrow.active {
+        transform: rotate(180deg);
+    }
+
+    /* -------------------------------------------------- */
+    /* COURSES 500                            COURSES 500 */
+    /* -------------------------------------------------- */
+    .courses-area {
+        padding: 50px 0;
+    }
+
+    .courses-contents ul {
+        padding: 40px 0 0;
+    }
+
+    .courses-link{
+        margin-top: 50px;
+    }
+
+    .courses-link a{
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    /* -------------------------------------------------- */
+    /* CORPORATE LESSONS 500        CORPORATE LESSONS 500 */
+    /* -------------------------------------------------- */
+    .corporate-area{
+        padding: 50px 0;
+    }
+
+    .corporate-contents-inner {
+        margin-top: 30px;
+    }
+
+    .corporate-contents-innerupper {
+        padding: 30px 0;
+    }
+
+    .corporate-contents-innerupper p:first-child{
+        font-size: 18px;
+    }
+
+    .index-jp .corporate-contents-innerupper p:first-child{
+        font-size: 18px;
+    }
+
+    .corporate-contents-innerlower {
+        padding: 30px 10px 0;
+    }
+
+    .corporate-contents-innerlower-text {
+        font-size: 14px;
+    }
+
+    .corporate-contents-innerlower ul {
+        margin-top: 15px;
+    }
+    
+    .corporate-contents-image {
+        height: unset;
+    }
+
+    .corporate-contents-image img {
+        aspect-ratio: 3 / 2;
+        height: unset;
+    }
+
+    .more60 {
+        font-size: 23px;
+        line-height: 1.5;
+    }
+
+    /* -------------------------------------------------- */
+    /* LOCATION 500                          LOCATION 500 */
+    /* -------------------------------------------------- */
+    .tokyo {
+        width: 160%;
+        min-width: unset;
+        opacity: .15;
+    }
+
+    .location-inner {
+        padding: 50px 0 50px;
+    }
+
+    .index-jp .location-contents h3 {
+        font-size: 17px;
+    }
+
+    .location-contents-left ul li {
+        align-items: unset;
+    }
+
+    .location-each-image {
+        width: 33%;
+        min-width: unset;
+    }
+
+    .location-each-text{
+        width: 67%;
+    }
+
+    .index-location-link {
+        margin-top: 30px;
+    }
+
+    /* -------------------------------------------------- */
+    /* NEWS 500                                  NEWS 500 */
+    /* -------------------------------------------------- */
+    .news-area {
+        padding: 50px 0 60px;
+    }
+
+    .news-area ul {
+        margin-top: 20px;
+    }
+
+    .news-area ul li {
+        padding: 15px 5px;
+    }
+
+    .news-area ul li p:last-of-type {
+        font-weight: initial;
+    }
+    
+    /* -------------------------------------------------- */
+    /* FREE TRIAL 500                      FREE TRIAL 500 */
+    /* -------------------------------------------------- */
+    .trial-contents-inner h2 {
+        font-size: 28px;
+    }
+
+    .trial-contents-inner h3 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .trial-contents-text {
+        text-align: center;
+    }
+
+    .br-add500 {
+        display: initial;
+    }
+
+    .index-trial-button a{
+        padding: 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: rgb(255, 0, 111);
+        font-size: 17px;
+        text-decoration: none;
+        color: white;
+    }
+}

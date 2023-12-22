@@ -1,0 +1,574 @@
+/* ==================================================================================================== */
+/* MEDIA QUERY 1200     MEDIA QUERY 1200     MEDIA QUERY 1200     MEDIA QUERY 1200     MEDIA QUERY 1200 */
+/* ==================================================================================================== */
+
+@media (max-width: 1200px) {
+    body.fixed {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /* -------------------------------------------------- */
+    /* GENERAL 1200                          GENERAL 1200 */
+    /* -------------------------------------------------- */
+    .header-area {
+        width: 100%;
+        height: 100px;
+    }
+
+    .body-index .header-area.active {
+        border-bottom: 2px solid #f7f5fa;
+    }
+
+    .header-right-upper {
+        height: 100px;
+        align-items: center;
+    }
+
+    .header-contact,
+    .sns-icons {
+        display: none;
+    }
+
+    .header-logo {
+        width: 270px;
+        transition: 0;
+    }
+
+    .header-logo.scroll {
+        width: none;
+    }
+
+    .top-container {
+        margin-top: 100px;
+    }
+
+    /* -------------------------------------------------- */
+    /* HUMBERGER LINE 1200            HUMBERGER LINE 1200 */
+    /* -------------------------------------------------- */
+    .humburger {
+        width: 35px;
+        height: 25px;
+        display: inline-block;
+        position: relative;
+        z-index: 20;
+    }
+
+    .humburger span {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #390b6c;
+        border-radius: 100px;
+        transition: .5s;
+    }
+
+    .humburger span:first-of-type {
+        top: 0;
+    }
+    .humburger span:nth-of-type(2) {
+        top: 50%;
+    }
+    .humburger span:last-of-type {
+        top: 100%;
+    }
+
+    .humburger.active span:first-of-type {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .humburger.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    .humburger.active span:last-of-type {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    /* -------------------------------------------------- */
+    /* NAVIGATION 1200                    NAVIGATION 1200 */
+    /* -------------------------------------------------- */
+    .header-nav {
+        width: 100%;
+        height: calc(100vh - 100px);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: #1d0b32de;
+        opacity: 0;
+        visibility: hidden;
+        overflow-y: auto;
+    }
+
+    .header-nav.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-course,
+    .nav-seminar {
+        position: static;
+    }
+
+    .course-list,
+    .seminar-list {
+        height: initial;
+        width: initial;
+        margin-top: 20px;
+        /* margin-left: 40px; */
+        display: block;
+        position: static;
+        box-shadow: none;
+        background-color: unset;
+    }
+
+    .nav-list {
+        width: 100%;
+        height: 540px;
+        margin: 0 auto;
+        padding: 20px 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: initial;
+        flex-wrap: wrap;
+        /* row-gap: 40px; */
+        overflow: auto;
+        background-color: white;
+        /* transition: height 0s; */
+    }
+
+    .nav-item {
+        width: 37%;
+        height: initial;
+        padding: 20px 0px;
+        display: block;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .nav-item:nth-child(2) {
+        padding-left: 0;
+        margin-bottom: 80px;
+    }
+
+    .nav-item:nth-child(5) {
+        padding: 20px 0;
+        margin-bottom: 150px;
+    }
+
+    .nav-item-contact,
+    .nav-item-trial {
+        width: 26%;
+        display: block;
+    }
+
+    .nav-link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        pointer-events: auto;
+        padding: 0 0 0 35px;
+        background-image: url('../img/icons/arrow_rightcircle_base-pueple.png');
+        background-repeat: no-repeat;
+        background-size: 22px;
+        background-position: 0 50%;
+    }
+
+    .nav-link:hover {
+        color: #b7acc8;
+    }
+
+    .nav-contact-button,
+    .nav-trial-button {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        background-color: #390b6c;
+        color: white;
+        background-image: url(../img/icons/arrow_right_white.svg);
+        background-repeat: no-repeat;
+        background-size: auto 20%;
+        background-position: top 50% right 18px;
+        text-decoration: none;
+    }
+
+    .nav-trial-button {
+        background-color: #ff3d7e;
+    }
+
+    .nav-item:last-child {
+        padding: 0;
+    }
+
+    .course-item,
+    .seminar-item {
+        height: unset;
+        padding: 5px 0;
+        width: unset;
+        border-bottom: none;
+        pointer-events: auto;
+    }
+
+    .course-item a,
+    .seminar-item a {
+        width: initial;
+        height: initial;
+        padding-left: 35px;
+        background-image: url('../img/icons/arrow_right_base-pueple.png');
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: 7px 50%;
+    }
+
+    .course-item a:hover,
+    .seminar-item a:hover {
+        color:  #b7acc8;
+        background-color: unset;
+    }
+
+    .nav-link:has(> .course-item a:hover),
+    .seminar-item a:hover .nav-link {
+        color: white;
+    }
+
+    .nav-item-sns {
+        width: 26%;
+    }
+
+    .nav-item-sns img {
+        width: 30px;
+        margin-right: 5px;
+    }
+}
+
+
+
+/* ==================================================================================================== */
+/* MEDIA QUERY 1000     MEDIA QUERY 1000     MEDIA QUERY 1000     MEDIA QUERY 1000     MEDIA QUERY 1000 */
+/* ==================================================================================================== */
+
+@media (max-width: 1000px) {
+    /* -------------------------------------------------- */
+    /* NAVIGATION 1000                    NAVIGATION 1000 */
+    /* -------------------------------------------------- */
+    .nav-list {
+        height: 640px;
+    }
+
+    .nav-item:nth-child(2) {
+        margin-bottom: 0px;
+    }
+
+    .nav-item:nth-child(5) {
+        margin-bottom: 40px;
+    }
+
+    .nav-item {
+        width: 50%;
+    }
+
+    .nav-contact-button,
+    .nav-trial-button {
+        height: 60px;
+    }
+}
+
+
+
+/* ==================================================================================================== */
+/* MEDIA QUERY 768      MEDIA QUERY 768      MEDIA QUERY 768      MEDIA QUERY 768       MEDIA QUERY 768 */
+/* ==================================================================================================== */
+
+@media (max-width: 768px) {
+    /* -------------------------------------------------- */
+    /* GENERAL 768                            GENERAL 768 */
+    /* -------------------------------------------------- */
+    .header-area {
+        height: 70px;
+    }
+
+    .header-inner {
+        width: 95%;
+    }
+
+    .header-right-upper {
+        height: 100%;
+    }
+
+    .header-logo {
+        width: 200px;
+    }
+
+    /* -------------------------------------------------- */
+    /* HUMBURGER 768                        HUMBURGER 768 */
+    /* -------------------------------------------------- */
+    .humburger {
+        width: 30px;
+        height: 20px;
+    }
+
+    .humburger span {
+        height: 2px;
+    }
+
+    /* -------------------------------------------------- */
+    /* NAVIGATION 768                      NAVIGATION 768 */
+    /* -------------------------------------------------- */
+    .header-nav {
+        top: 70px;
+        height: calc(100vh - 70px);
+        padding: 0;
+        background-color: white;
+    }
+
+    .nav-list {
+        width: 100%;
+        height: 100%;
+        margin: unset;
+        display: initial;
+        padding: 0;
+        background-color: white;
+    }
+
+    .nav-item:nth-child(5) {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #f5f1f9;
+    }
+
+    .nav-item-sns {
+        border-bottom: none;
+        padding: 50px 0 0 5%;
+    }
+
+
+    .nav-item-contact,
+    .nav-item-trial {
+        border-bottom: none;
+        padding: 10px 0;
+    }
+
+    .nav-item-trial {
+        padding-top: 30px;;
+    } 
+
+    .nav-item:last-child {
+        padding: 10px 0 50px 0;;
+    }
+
+    .nav-contact-button,
+    .nav-trial-button {
+        width: 95%;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .nav-link {
+        width: 100%;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 15px 0 15px calc(5vw + 35px);
+        background-position: 5vw 50%;
+    }
+
+    .nav-item:hover .nav-link{
+        color: #333333;
+    }
+
+    .sp-nav-course {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-arrow-container {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f6f8;
+        z-index: 2;
+        pointer-events: auto;
+    }
+
+    .nav-arrow {
+        width: 15px;
+        fill: #390b6c;
+        transition: .3s;
+    }
+
+    .nav-arrow.active {
+        transform: rotate(180deg);
+    }
+
+    .nav-accordion {
+        height: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .course-list,
+    .seminar-list {
+        margin: 0;
+        padding: 30px 0 30px 0;
+        background-color:  #f7f6f8;
+    }
+
+    .course-item a,
+    .seminar-item a {
+        padding: 0 0 0 calc(5vw + 60px);
+        background-position: calc(5vw + 35px) 50%;
+    }
+
+    .top-container {
+        margin-top: 60px;
+    }
+}
+
+
+
+/* ==================================================================================================== */
+/* MEDIA QUERY 500      MEDIA QUERY 500      MEDIA QUERY 500      MEDIA QUERY 500       MEDIA QUERY 500 */
+/* ==================================================================================================== */
+
+@media (max-width: 500px) {
+    /* -------------------------------------------------- */
+    /* GENERAL 500                            GENERAL 500 */
+    /* -------------------------------------------------- */
+    .header-area {
+        height: 60px;
+    }
+
+    .header-logo {
+        width: 165px;
+    }
+
+    /* -------------------------------------------------- */
+    /* HUMBURGER 500                        HUMBURGER 500 */
+    /* -------------------------------------------------- */
+    .humburger {
+        width: 26px;
+        height: 18px;
+    }
+
+    .header-icons {
+        height: 100%;
+        position: relative;
+    }
+
+    .humburger span {
+        height: 2px;
+    }
+
+    /* -------------------------------------------------- */
+    /* LANGUAGE 500                          LANGUAGE 500 */
+    /* -------------------------------------------------- */
+    .header-language {
+        font-size: 13px;
+        margin-right: 18px;
+
+    }
+
+    .header-language img {
+        width: 15px;
+    }
+
+    .header-language svg {
+        display: none;
+    }
+
+    .language-jpn {
+        display: none;
+    }
+
+
+    /* -------------------------------------------------- */
+    /* LANGUAGE 500                          LANGUAGE 500 */
+    /* -------------------------------------------------- */
+
+    .sp-header-language-area.active {
+        display: block;
+    }
+
+    .sp-header-language-contents {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    .sp-header-language-contents li {
+        width: 50%;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .language-current {
+        padding: 10px 0;
+        background-color: white;
+        color: #390b6c;
+    }
+
+    .language-link-sp {
+        width: 100%;
+        padding: 10px 0;
+        display: inline-block;
+        color: white;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* -------------------------------------------------- */
+    /* NAVIGATION 500                      NAVIGATION 500 */
+    /* -------------------------------------------------- */
+    .header-nav {
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+
+    .nav-list {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        padding: 13px 0 13px calc(5vw + 35px);
+        background-size: 20px;
+        background-position: 5vw 50%;
+    }
+
+    .nav-icon {
+    width: 25px;
+    }
+
+    .nav-arrow {
+        width: 12px;
+    }
+
+    .item-arrow {
+        width: 10px;
+    }
+
+    .nav-contact-button,
+    .nav-trial-button {
+        height: 55px;
+    }
+
+    .course-list a,
+    .seminar-list a {
+        font-size: 16px;
+        background-size: 9px;
+    }
+}
