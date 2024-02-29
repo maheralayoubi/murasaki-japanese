@@ -1,4 +1,6 @@
-// ----- Swiper -----  ----- Swiper -----  ----- Swiper -----  ----- Swiper -----  ----- Swiper -----
+// ====================================================================================================
+// Swiper                                        Swiper                                          Swiper 
+// ====================================================================================================
 
 const myDelay = 5000; //各スライドの時間
 const mySpeed = 1000; //フェードの時間
@@ -80,7 +82,9 @@ new Swiper('.swiper-container', swipeOption);
 
 
 
-// ----- Why Accordion -----  ----- Why Accordion -----  ----- Why Accordion -----  ----- Why Accordion -----  ----- Why Accordion -----
+// ====================================================================================================
+// Why Accordion                             Why Accordion                                Why Accordion
+// ====================================================================================================
 const whyAcc = document.querySelectorAll('.why-each-header');
 const whyText = document.querySelectorAll('.why-each-text');
 const whyArr = document.querySelectorAll('.why-arrow');
@@ -99,7 +103,9 @@ for (let i = 0; i < whyAcc.length; i++) {
 
 
 
-// ----- VH -----  ----- VH -----  ----- VH -----  ----- VH -----  ----- VH -----
+// ====================================================================================================
+// VH                                             VH                                                 VH
+// ====================================================================================================
 const vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 

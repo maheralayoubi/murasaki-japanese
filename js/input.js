@@ -1,46 +1,46 @@
+'use strict';
+
+// 英語版のニュース
+// date: '日付', text: 'ニュースの見出し文', link: 'リンク先のURL'
 const newsEn = [
     {
-        date: 'Oct. 18, 2023',
-        text: '【twitter】 "Today\'s word" updated： 「必須」',
-        link: 'https://twitter.com/MJI_japanese/status/1714490562093666623'
+        date: 'Dec. 20, 2023',
+        text: '【twitter】 "Today\'s word" updated： 「帰化」',
+        link: 'https://twitter.com/MJI_japanese/status/1737303773243220025'
     },
     {
-        date: 'Oct. 10, 2023',
-        text: '【twitter】 "Today\'s word" updated： 「記者会見」',
-        link: 'https://twitter.com/MJI_japanese/status/1711585964622274603'
+        date: 'Dec. 19, 2023',
+        text: '【twitter】 "Today\'s word" updated： 「高層ビル」',
+        link: 'https://twitter.com/MJI_japanese/status/1737022979891163342'
     },
     {
-        date: 'Oct. 01, 2023',
-        text: 'JLPT Preparation Course for the test in December is starting on October 07.',
-        link: 'courses/jlpt'
+        date: 'Dec. 12, 2023',
+        text: '【twitter】 "Today\'s word" updated： 「〜機」',
+        link: 'https://twitter.com/MJI_japanese/status/1734478797293174852'
     }
 ];
 
+// 日本語版のニュース
+// date: '日付', text: 'ニュースの見出し文', link: 'リンク先のURL'
 const newsJa = [
     {
-        date: '2023. 10. 18',
-        text: '【twitter】 "Today\'s word" 更新： 「必須」',
-        link: 'https://twitter.com/MJI_japanese/status/1714490562093666623'
+        date: '2023. 12. 20',
+        text: '【twitter】 "Today\'s word" 更新： 「帰化」',
+        link: 'https://twitter.com/MJI_japanese/status/1737303773243220025'
     },
     {
-        date: '2023. 10. 10',
-        text: '【twitter】 "Today\'s word" 更新： 「記者会見」',
-        link: 'https://twitter.com/MJI_japanese/status/1711585964622274603'
+        date: '2023. 12. 19',
+        text: '【twitter】 "Today\'s word" 更新： 「高層ビル」',
+        link: 'https://twitter.com/MJI_japanese/status/1737022979891163342'
     },
     {
-        date: '2023. 10. 01',
-        text: '【JLPTコース】12月の試験対策（10月7日スタート）のお申し込み受付中です。',
-        link: 'courses/jlpt'
-    },
-    {
-        date: '2023. 10. 01',
-        text: '【日本語教師向け研修】間接教授法講座のビデオ視聴による受講が可能です。',
-        link: 'seminars/indirect-method'
-    }
+        date: '2023. 12. 12',
+        text: '【twitter】 "Today\'s word" 更新： 「〜機」',
+        link: 'https://twitter.com/MJI_japanese/status/1734478797293174852'}
 ];
 
-
-
+// 間接教授法講座日程
+// yy: '年', mm: 月, dd: 日
 const indirectDate = [
     {yy: '2023', mm: 9, dd:  9},
     {yy:     '', mm: 9, dd: 10},
@@ -48,10 +48,9 @@ const indirectDate = [
     {yy:     '', mm: 9, dd: 17}
 ];
 
-const advancedDate = 
-    {yy: '2023', mm: 7, dd:  8};
-
-
+// 上級日本語教授法講座日程
+// yy: '年', mm: 月, dd: 日
+const advancedDate = {yy: '2023', mm: 7, dd:  8};
 
 
 
@@ -67,6 +66,8 @@ if (currentUrl.includes('indirect-method')) {
 } else {
     indexNews(newsEn);
 }
+
+
 
 function indirectSchedule() {
     const yy01 = document.querySelectorAll('.yy01');

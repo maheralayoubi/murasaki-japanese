@@ -304,9 +304,6 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 	</head>
 	<body>
 
-	<!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
-
-	<!-- ▼************ 送信内容表示部　※編集は自己責任で ************ ▼-->
 	<div class="form-head">
         <img src="img/footer_mji-logo.png">
     </div>
@@ -335,13 +332,11 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 				</p>
 			</form>
 		<?php } ?>
-	</div><!-- /formWrap -->
-	<!-- ▲ *********** 送信内容確認部　※編集は自己責任で ************ ▲-->
+	</div>
 
-	<!-- ▼ Footerその他コンテンツなど　※編集可 ▼-->
-		<footer>
-			<p>&copy; MURASAKI JAPANESE INSTITUTE</p>
-		</footer>
+	<footer>
+		<p>&copy; MURASAKI JAPANESE INSTITUTE</p>
+	</footer>
 	</body>
 	</html>
 	<?php
@@ -395,9 +390,6 @@ if (($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &
 				<footer>
 					<p>&copy; MURASAKI JAPANESE INSTITUTE</p>
 				</footer>
-				<!-- </body>
-				</html> -->
-		<!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
 	</body>
 	</html>
 	<?php 
@@ -541,10 +533,6 @@ function confirmOutput($arr, $th) {
 			$html .= '<input type="hidden" name="'.$key.'" value="'.str_replace(array("<br />","<br>"),"",$out).'" />';
 			$html .= "</td></tr>\n";
 		}
-		
-		// $html .= "<tr><th>".$th[$key]."</th><td>".$out;
-		// $html .= '<input type="hidden" name="'.$key.'" value="'.str_replace(array("<br />","<br>"),"",$out).'" />';
-		// $html .= "</td></tr>\n";
 	}
 
 	//トークンをセット
@@ -650,7 +638,6 @@ function requireCheck($require, $th){
 	foreach($_POST as $k => $v) {
 		$arr_i[] = $k;
 	}
-	// array_shift($arr_i);
 
 	foreach($require as $requireVal){
 		$existsFalg = '';
@@ -689,9 +676,8 @@ function requireCheck($require, $th){
 			}
 
 		}
-		// $j = ;
-		if($existsFalg != 1){
 
+		if($existsFalg != 1){
 				$res['errm'] .= "<p class=\"error_messe\">【".$th[$requireVal]."】 is not selected.</p>\n";
 				$res['empty_flag'] = 1;
 		}

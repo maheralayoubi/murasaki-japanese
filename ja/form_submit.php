@@ -178,7 +178,7 @@ switch($form_type) {
 			'Inquiry' => 'ご質問・ご要望'
 		);
 
-		$subject = "お問い合わせ";
+		$subject = "セミナーお申し込み";
 
 		$remail_text = <<< TEXT
 
@@ -368,9 +368,6 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 	</head>
 	<body>
 
-	<!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
-
-	<!-- ▼************ 送信内容表示部　※編集は自己責任で ************ ▼-->
 	<div class="form-head">
         <img src="../img/footer_mji-logo.png">
     </div>
@@ -399,13 +396,11 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 				</p>
 			</form>
 		<?php } ?>
-	</div><!-- /formWrap -->
-	<!-- ▲ *********** 送信内容確認部　※編集は自己責任で ************ ▲-->
+	</div>
 
-	<!-- ▼ Footerその他コンテンツなど　※編集可 ▼-->
-		<footer>
-			<p>&copy; MURASAKI JAPANESE INSTITUTE</p>
-		</footer>
+	<footer>
+		<p>&copy; MURASAKI JAPANESE INSTITUTE</p>
+	</footer>
 	</body>
 	</html>
 	<?php
@@ -458,9 +453,6 @@ if (($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &
 				<footer>
 					<p>&copy; MURASAKI JAPANESE INSTITUTE</p>
 				</footer>
-				<!-- </body>
-				</html> -->
-		<!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
 	</body>
 	</html>
 	<?php 
@@ -561,21 +553,9 @@ function postToMail($arr, $th){
 				case 'Third_time':
 					$resArray .= h($out)."\n\n";
 					break;
-				// case 'Inquiry':
-				// 	$resArray .= "【 ".h($th[$key])." 】\n".h($out)."\n\n";
-				// 	break;
 				default:
 					$resArray .= "【".h($th[$key])."】\n".h($out)."\n\n";
 			}
-
-			// if ($key == 'First_date' || $key == 'Second_date' || $key == 'Third_date') {
-			// 	$resArray .= "【 "."Date & Time ".$i." 】 ".h($out)." ";
-			// 	$i += 1;
-			// } else if ($key == 'First_time' || $key == 'Second_time' || $key == 'Third_time') {
-			// 	$resArray .= h($out)."\n\n";
-			// } else {
-			// 	$resArray .= "【 ".h($th[$key])." 】 ".h($out)."\n\n";
-			// }
 		}
 	}
 	return $resArray;
@@ -752,7 +732,6 @@ function requireCheck($require, $th){
 	foreach($_POST as $k => $v) {
 		$arr_i[] = $k;
 	}
-	// array_shift($arr_i);
 
 	foreach($require as $requireVal){
 		$existsFalg = '';
@@ -791,7 +770,7 @@ function requireCheck($require, $th){
 			}
 
 		}
-		// $j = ;
+		
 		if($existsFalg != 1){
 
 				$res['errm'] .= "<p class=\"error_messe\">【".$th[$requireVal]."】 が未入力です。</p>\n";
