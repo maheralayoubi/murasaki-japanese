@@ -142,7 +142,7 @@
     h2:not(.intro-contents h2, .trial-area h2, .contact-area h2) {
         border-top: 3px solid #390b6c;
         border-image: linear-gradient(to right, #ccb6dc 16px, #6937a3 16px, #6937a3 32px, white 30px, white 100%);
-        border-image-slice: 1; 
+        border-image-slice: 1;
     }
 
     /* -------------------------------------------------- */
@@ -181,7 +181,7 @@
     .index-contents {
         row-gap: 5px;
     }
-    
+
     .index-contents li {
         width: 100%;
     }
@@ -234,18 +234,18 @@
         margin-top: 20px;
         padding-left: 0px;
     }
-    
+
     .levels-contents {
         border-left: 7px solid #390b6c;
         border-image: linear-gradient(to bottom, #f3f0f6 0%, #390b6c 100%);
         border-image-slice: 1;
     }
-    
+
     .levels-each {
         padding-left: 25px;
         padding-bottom: 20px;
     }
-    
+
     .levels-each-arrow {
         padding: 30px;
     }
@@ -295,7 +295,7 @@
         padding: 10px 0;
         box-sizing: border-box;
     }
-    
+
     .details-table td {
         width: 100%;
         display: block;
@@ -351,7 +351,7 @@
     .assistance-contents {
         display: block;
     }
-    
+
     .assistance-contents p {
         width: 100%;
     }
@@ -455,7 +455,7 @@
         padding: 10px 30px;
         box-sizing: border-box;
     }
-    
+
     .jlpt-details-table td {
         width: 100%;
         display: block;
@@ -477,7 +477,7 @@
     .message-area p {
         width: 100%;
     }
-    
+
     .message-image {
         width: 80%;
         max-width: 350px;
@@ -534,7 +534,7 @@
     .lessons-contents-each:nth-child(2){
         margin-top: 30px;
     }
-    
+
     .lessons-contents-each:last-child {
         margin-top: 30px;
     }
@@ -781,7 +781,7 @@
     .levels-contents h3 {
         font-size: 20px;
     }
-    
+
     .levels-each {
         padding-left: 20px;
         text-shadow: 1px 1px 0px white, -1px -1px 3px white, 2px 2px 3px white;
@@ -839,7 +839,7 @@
     .jlpt-details-contents h3 {
         font-size: 20px;
     }
-    
+
     .jlpt-details-table td {
         padding: 15px 20px;
     }
@@ -854,7 +854,7 @@
         padding: 10px;
         border-radius: 10px 10px 0 0;
     }
-    
+
     .age-table td {
         width: 100%;
         display: block;
@@ -956,6 +956,9 @@
 
     .text-price {
         display: none;
+    }
+    .time-breakdown {
+      padding-left: 25px;
     }
 
         /* 受講者の声 */
