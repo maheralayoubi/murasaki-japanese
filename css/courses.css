@@ -232,7 +232,7 @@ h1 {
     align-items: center;
     background-color: var(--base-color-lite);
     border-bottom: 1px solid #cdc3e0;
-    transition: color .4s, background-color .4s ;
+    transition: color .4s, background-color .4s;
 }
 
 .index-contents a:hover {
@@ -259,7 +259,7 @@ h1 {
     justify-content: space-between;
 }
 
-.features-contents h3{
+.features-contents h3 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -276,7 +276,7 @@ h1 {
     box-shadow: 2px 2px 5px #2b085291;
 }
 
-.features-each-icon svg{
+.features-each-icon svg {
     width: 50px;
     fill: #390b6c;
 }
@@ -382,13 +382,15 @@ h1 {
 /* -------------------------------------------------- */
 /* DETAILS / FEES 1300            DETAILS / FEES 1300 */
 /* -------------------------------------------------- */
-.details-table, .fees-table {
+.details-table,
+.fees-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 2px 2px;
 }
 
-.details-table th, .fees-table th {
+.details-table th,
+.fees-table th {
     width: 20%;
     padding: 15px;
     vertical-align: middle;
@@ -428,6 +430,7 @@ h1 {
 .others-area {
     margin-bottom: 60px;
 }
+
 .others-list {
     display: flex;
     justify-content: space-between;
@@ -535,7 +538,7 @@ h1 {
     width: 100%;
 }
 
-.naturalization-details-table th{
+.naturalization-details-table th {
     padding: 15px;
     vertical-align: middle;
     color: white;
@@ -543,7 +546,7 @@ h1 {
     border: 2px solid white;
 }
 
-.naturalization-details-table th:first-of-type{
+.naturalization-details-table th:first-of-type {
     width: 20%;
 }
 
@@ -553,7 +556,7 @@ h1 {
     background-color: #390b6c;
 }
 
-.naturalization-details-table tr:first-child > *:first-child {
+.naturalization-details-table tr:first-child>*:first-child {
     background-color: white;
 }
 
@@ -597,7 +600,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-.jlpt-details-each:last-of-type{
+.jlpt-details-each:last-of-type {
     margin-top: 50px;
 }
 
@@ -605,7 +608,7 @@ h1 {
     width: 100%;
 }
 
-.jlpt-details-table th{
+.jlpt-details-table th {
     width: 20%;
     padding: 15px;
     vertical-align: middle;
@@ -625,15 +628,15 @@ h1 {
     list-style: none;
 }
 
-.jlpt-length-list > li:first-of-type{
+.jlpt-length-list>li:first-of-type {
     margin-top: 10px;
 }
 
-.jlpt-length-list > li:last-of-type{
+.jlpt-length-list>li:last-of-type {
     margin-top: 10px;
 }
 
-.jlpt-details-table ul > li > ul {
+.jlpt-details-table ul>li>ul {
     margin-top: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -651,22 +654,22 @@ h1 {
 }
 
 .body-children .details-table tr:first-child th,
-.body-children .fees-table  tr:first-child th {
+.body-children .fees-table tr:first-child th {
     border-radius: 20px 0 0 0;
 }
 
 .body-children .details-table tr:last-child th,
-.body-children .fees-table  tr:last-child th {
+.body-children .fees-table tr:last-child th {
     border-radius: 0 0 0 20px;
 }
 
 .body-children .details-table tr:first-child td,
-.body-children .fees-table  tr:first-child td {
+.body-children .fees-table tr:first-child td {
     border-radius: 0 20px 0 0;
 }
 
 .body-children .details-table tr:last-child td,
-.body-children .fees-table  tr:last-child td {
+.body-children .fees-table tr:last-child td {
     border-radius: 0 0 20px 0;
 }
 
@@ -716,10 +719,10 @@ h1 {
 
     -webkit-mask-image: url(../img/icons/triangle.png);
     -webkit-mask-position: 0 0;
-	-webkit-mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
-	mask-image: url(../img/icons/triangle.png);
-	mask-repeat: no-repeat;
+    mask-image: url(../img/icons/triangle.png);
+    mask-repeat: no-repeat;
     mask-size: 100% 100%;
     mask-position: 0 0;
     background-color: rgb(255, 0, 119);
@@ -881,7 +884,7 @@ h1 {
     transition: color .1s;
 }
 
-.specialties-link::after{
+.specialties-link::after {
     content: "→";
 }
 
@@ -899,10 +902,18 @@ h1 {
     font-weight: normal;
 }
 
+/* start modify */
 .business-table,
 .naturalization-table,
 .jlpt-table,
-.children-table {
+.children-table,
+.online-course-table,
+.group-lesson-table {
+    width: 1000px;
+    margin-bottom: 25px;
+}
+
+.unique-courses-table {
     width: 1000px;
 }
 
@@ -934,6 +945,40 @@ h1 {
     width: 15%;
 }
 
+.online-course-table th {
+    padding: 15px 20px;
+    background-color: #917f1a;
+    color: white;
+    border: 1px solid white;
+    vertical-align: middle;
+}
+
+.online-course-table td {
+    width: 27%;
+    padding: 20px 0px;
+    background-color: #e8dcea;
+    border: 1px solid white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.group-lesson-table th {
+    padding: 15px 20px;
+    background-color: #1a9120;
+    color: white;
+    border: 1px solid white;
+    vertical-align: middle;
+}
+
+.group-lesson-table td {
+    width: 42%;
+    padding: 20px 0px;
+    background-color: #e8dcea;
+    border: 1px solid white;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .naturalization-table th {
     padding: 15px 20px;
     background-color: #751a91;
@@ -943,7 +988,7 @@ h1 {
 }
 
 .naturalization-table td {
-    width: 42%;
+    width: 84%;
     padding: 20px 0px;
     background-color: #e8dcea;
     border: 1px solid white;
@@ -960,7 +1005,7 @@ h1 {
 }
 
 .jlpt-table td {
-    width: 42%;
+    width: 35%;
     padding: 20px 0px;
     background-color: #f5eaf1;
     border: 1px solid white;
@@ -985,9 +1030,37 @@ h1 {
     vertical-align: middle;
 }
 
+.unique-courses-table th {
+    padding: 15px 20px;
+    background-color: #187782;
+    color: white;
+    vertical-align: middle;
+    border: 1px solid white;
+}
+
+.unique-courses-table td {
+    padding: 20px 0px;
+    background-color: #f0ecf5;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid white;
+}
+
+.unique-courses-table td:nth-of-type(4) {
+    width: 15%;
+}
+
+.unique-courses-table td:nth-of-type(5) {
+    width: 15%;
+}
+
+
 .body-courses .trial-area {
     margin-bottom: 10px;
 }
+
+/* end modify */
+
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* CORPORATE 1300                      CORPORATE 1300 */
@@ -1020,7 +1093,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.lessons-contents-each:nth-child(2){
+.lessons-contents-each:nth-child(2) {
     margin-top: 50px;
 }
 
@@ -1093,7 +1166,7 @@ h1 {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
-    color:var(--base-color)
+    color: var(--base-color)
 }
 
 .lessons-result ul li {
@@ -1214,7 +1287,7 @@ h1 {
     font-weight: normal;
 }
 
-.seminars-schedule-contents > tbody > tr > td {
+.seminars-schedule-contents>tbody>tr>td {
     padding: 30px 40px;
     background-color: #f8f6fa;
     border: 2px solid white;
@@ -1228,7 +1301,8 @@ h1 {
     padding-right: 5px;
 }
 
-span.month,span.day{
+span.month,
+span.day {
     display: inline-block;
     width: 1.2em;
     text-align: right;
