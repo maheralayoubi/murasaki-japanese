@@ -50,7 +50,7 @@ const indirectDate = [
 
 // 上級日本語教授法講座日程
 // yy: '年', mm: 月, dd: 日
-const advancedDate = {yy: '2024', mm: 1, dd:  1};
+const advancedDate = {yy: '2024', mm: 6, dd:  1};
 
 
 
