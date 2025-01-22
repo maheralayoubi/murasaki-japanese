@@ -42,10 +42,10 @@ const newsJa = [
 // 間接教授法講座日程
 // yy: '年', mm: 月, dd: 日
 const indirectDate = [
-    {yy: '2024', mm: 8, dd:  31},
-    {yy:     '', mm: 9, dd: 1},
-    {yy:     '', mm: 9, dd: 7},
-    {yy:     '', mm: 9, dd: 8}
+    {yy: '2025', mm: 3, dd:  1},
+    {yy:     '', mm: 3, dd: 2},
+    {yy:     '', mm: 3, dd: 8},
+    {yy:     '', mm: 3, dd: 9}
 ];
 
 // 上級日本語教授法講座日程
